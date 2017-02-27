@@ -34,19 +34,19 @@ body{
 	}
 
 	nav a .nav_home{
-		background-image: url("../../images/nav_home_two.jpg");
+		background-image: url("../../../images/nav_home_two.jpg");
 	}
 
 	nav a .nav_about{
-		background-image: url("../../images/nav_about_two.jpg");
+		background-image: url("../../../images/nav_about_two.jpg");
 	}
 
 	nav a .nav_work{
-		background-image: url("../../images/nav_work_two.jpg");
+		background-image: url("../../../images/nav_work_two.jpg");
 	}
 
 	nav a .nav_contact{
-		background-image: url("../../images/nav_contact_two.jpg");
+		background-image: url("../../../images/nav_contact_two.jpg");
 	}
 		nav a .col-xs-3 h3{
 			position: absolute;
@@ -83,19 +83,19 @@ body{
 			.main_content .col-xs-10 .facebook{
 				margin: 0px 9.58vw 0px 9.58vw;
 				width: 15vw;
-				background-image: url("../../images/facebook.png");
+				background-image: url("../../../images/facebook.png");
 				background-size: cover;
 			}
 			.main_content .col-xs-10 .instagram{
 				margin: 0px 9.58vw 0px 0px;
 				width: 15vw;
-				background-image: url("../../images/instagram.png");
+				background-image: url("../../../images/instagram.png");
 				background-size: cover;
 			}
 			.main_content .col-xs-10 .twitter{
 				margin: 0px 9.58vw 0px 0px;
 				width: 15vw;
-				background-image: url("../../images/twitter.png");
+				background-image: url("../../../images/twitter.png");
 				background-size: cover;
 			}
 				.main_content .col-xs-10 a .col-xs-4 img{
