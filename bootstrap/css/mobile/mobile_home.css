@@ -1,27 +1,27 @@
 /* ---------------------------- FONTS ---------------------------- */
 @font-face{
 	font-family: fontone;
-	src: url(../fonts/font_1.ttf);
+	src: url(../../fonts/font_1.ttf);
 }
 
 @font-face{
 	font-family: fonttwo;
-	src: url(../fonts/font_2.ttf);
+	src: url(../../fonts/font_2.ttf);
 }
 
 @font-face{
 	font-family: fontthree;
-	src: url(../fonts/font_3.ttf);
+	src: url(../../fonts/font_3.ttf);
 }
 
 @font-face{
 	font-family: fontfour;
-	src: url(../fonts/font_4.ttf);
+	src: url(../../fonts/font_4.ttf);
 }
 
 @font-face{
 	font-family: fontfive;
-	src: url(../fonts/font_5.ttf);
+	src: url(../../fonts/font_5.ttf);
 }
 
 /* ------------------------ FULL PAGE ------------------------ */
@@ -150,19 +150,19 @@ body{
 					position: relative;
 				}
 				.nav_home{
-					background-image: url("../../images/nav_home.jpg");
+					background-image: url("../../../images/nav_home.jpg");
 					margin: 0px 1vw 0px 0px;
 				}
 				.nav_about{
-					background-image: url("../../images/nav_about.jpg");
+					background-image: url("../../../images/nav_about.jpg");
 					margin: 0px 1vw 0px 0vw;
 				}
 				.nav_work{
-					background-image: url("../../images/nav_work.jpg");
+					background-image: url("../../../images/nav_work.jpg");
 					margin: 0px 1vw 0px 0vw;
 				}
 				.nav_contact{
-					background-image: url("../../images/nav_contact.jpg");
+					background-image: url("../../../images/nav_contact.jpg");
 					margin: 0px 0px 0px 0vw;
 				}
 

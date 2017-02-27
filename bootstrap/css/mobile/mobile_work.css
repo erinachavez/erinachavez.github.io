@@ -34,19 +34,19 @@ body{
 	}
 
 	nav a .nav_home{
-		background-image: url("../../images/nav_home_two.jpg");
+		background-image: url("../../../images/nav_home_two.jpg");
 	}
 
 	nav a .nav_about{
-		background-image: url("../../images/nav_about_two.jpg");
+		background-image: url("../../../images/nav_about_two.jpg");
 	}
 
 	nav a .nav_work{
-		background-image: url("../../images/nav_work_two.jpg");
+		background-image: url("../../../images/nav_work_two.jpg");
 	}
 
 	nav a .nav_contact{
-		background-image: url("../../images/nav_contact_two.jpg");
+		background-image: url("../../../images/nav_contact_two.jpg");
 	}
 		nav a .col-xs-3 h3{
 			position: absolute;
@@ -208,7 +208,7 @@ body{
 		border-radius: 0px;
 	}
 		.modal-footer .btn:hover{
-			background-image: url("../../images/hover_work_close.png");
+			background-image: url("../../../images/hover_work_close.png");
 			background-size: cover;
 			background-color: rgba(255,255,255,1);
 		}
