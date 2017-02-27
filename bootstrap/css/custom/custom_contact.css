@@ -120,22 +120,23 @@ body{
 			}
 				form input{
 					width: 100%;
+					margin: 1vw 0px 1vw 0px;
 				}
 				form textarea{
 					width: 100%;
+					margin: 1vw 0px 1vw 0px;
 				}
-				form #submit{
-					border: solid .5vw rgba(0,0,0,1);
-					width: 50%;
-					height: 4vw;
-					margin: 0px auto 0px auto;
+				form td{
+					padding: 0px 0px 0px 14vw;
 				}
-				form #submit2{
-					border: solid .5vw rgba(0,0,0,1);
-					width: 50%;
-					height: 4vw;
-					margin: 0px auto 0px auto;
-				}
+					form td #ss-submit{
+						border: solid .5vw rgba(0,0,0,1);
+						height: 4vw;
+					}
+					form td #submit2{
+						border: solid .5vw rgba(0,0,0,1);
+						height: 4vw;
+					}
 				.toggle_display_none{
 					display: none;
 				}
