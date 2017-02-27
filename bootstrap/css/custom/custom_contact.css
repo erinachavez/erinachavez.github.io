@@ -75,7 +75,7 @@ body{
 				text-align: center;
 				margin: 0px 0px 5vw 0px;
 			}
-			.main_content .col-xs-10 .facebook,.instagram,.twitter{
+			.main_content .col-xs-10 .facebook,.instagram,.twitter,.linkedin{
 				padding: 0px;
 				border: solid .5vw rgba(0,0,0,1);
 				height: 10.39vw;
@@ -96,6 +96,12 @@ body{
 				margin: 0px 1.5vw 0px 1.5vw;
 				width: 10.39vw;
 				background-image: url("../../../images/twitter.png");
+				background-size: cover;
+			}
+			.main_content .col-xs-10 .linkedin{
+				margin: 0px 1.5vw 0px 1.5vw;
+				width: 10.39vw;
+				background-image: url("../../../images/linkedin.png");
 				background-size: cover;
 			}
 				.main_content .col-xs-10 a .col-xs-2 img{
