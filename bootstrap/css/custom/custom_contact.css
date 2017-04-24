@@ -109,7 +109,7 @@ body{
 				}
 					.main_content .col-xs-10 a:hover .col-xs-2 img{
 						display: block;
-						height: 9.45vw;
+						height: 9.5vw;
 					}
 			.main_content .col-xs-10 hr{
 				margin: 5vw 0px 5vw 0px;
@@ -120,6 +120,10 @@ body{
 				font-size: 1.5vw;
 				text-align: center;
 			}
+			.main_content .col-xs-10 #confirmation{
+				font-size: 1.5vw;
+				text-align: center;
+			}
 			form{
 				width: 70%;
 				margin: 5vw auto 0px auto;
@@ -127,21 +131,23 @@ body{
 				form input{
 					width: 100%;
 					margin: 1vw 0px 1vw 0px;
+					padding: 0vw 0vw 0vw 1vw;
+					border: solid .35vw rgba(0,0,0,1);
 				}
 				form textarea{
 					width: 100%;
 					margin: 1vw 0px 1vw 0px;
+					border: solid .35vw rgba(0,0,0,1);
+					padding: 1vw 0vw 0vw 1vw;
 				}
 				form td{
-					padding: 0px 0px 0px 14vw;
 				}
-					form td #ss-submit{
-						border: solid .5vw rgba(0,0,0,1);
-						height: 4vw;
-					}
-					form td #submit2{
-						border: solid .5vw rgba(0,0,0,1);
-						height: 4vw;
+					form td input{
+						background-color: rgba(255,255,255,1);
+						border: solid .35vw rgba(0,0,0,1);
+						width: 5.25vw;
+						text-align: left;
+						color: rgba(117,117,117,1);
 					}
 				.toggle_display_none{
 					display: none;

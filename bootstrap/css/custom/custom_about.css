@@ -147,7 +147,8 @@ body{
 					}
 						.main_content .col-xs-10 .resume_content a:hover .resume_button img{
 							display: block;
-							height: 6vw;
+							height: 5.9vw;
+							width: 100%;
 							z-index: 10;
 						}
 

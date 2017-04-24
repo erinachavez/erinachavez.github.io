@@ -98,6 +98,7 @@ body{
 						.main_content .col-xs-10 a:hover .webdesign_content .webdesign_button img{
 							display: block;
 							height: 6vw;
+							width: 100%;
 							z-index: 10;
 						}
 
@@ -138,6 +139,7 @@ body{
 						.main_content .col-xs-10 a:hover .graphicdesign_content  .graphicdesign_button img{
 							display: block;
 							height: 6vw;
+							width: 100%;
 							z-index: 10;
 						}
 
@@ -208,3 +210,18 @@ body{
 			background-size: cover;
 			background-color: rgba(255,255,255,1);
 		}
+
+.glyphicon-chevron-left{
+	font-size: 2vw;
+	position: absolute;
+	left: .75vw;
+	top: 40%;
+	color: rgba(0,0,0,1);
+}
+.glyphicon-chevron-right{
+	font-size: 2vw;
+	position: absolute;
+	right: .75vw;
+	top: 40%;
+	color: rgba(0,0,0,1);
+}
