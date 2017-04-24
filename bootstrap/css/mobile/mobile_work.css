@@ -18,10 +18,6 @@ body{
 		width: 100%;
 	}
 
-	nav a:hover .col-xs-3{
-			height: 15vw;
-		}
-
 	nav a .nav_home,.nav_about,.nav_work,.nav_contact{
 		background-size: cover;
 		background-position: center bottom;
@@ -57,18 +53,15 @@ body{
 		nav a .col-xs-3 img{
 			display: none;
 		}
-			nav a:hover .col-xs-3 img{
-				display: block;
-				width: 25vw;
-			}
 
 
 	/* ------------------------- MAIN CONTENT ------------------------- */
 	.main_content{
-		margin: 19vw 0px 0px 0px;
+		margin: 19vw 0px 0vw 0px;
 	}
 		.main_content .col-xs-10{
 			padding: 0px;
+			margin: 0vw 0vw 5vw 0vw;
 		}
 			/* header */
 			.header_content{
@@ -93,13 +86,11 @@ body{
 						color: rgba(0,0,0,1);
 					}
 					.main_content .col-xs-10 a .webdesign_content .webdesign_button img{
-						display: none;
+						display: block;
+						height: 6.25vw;
+						width: 100%;
+						z-index: 10;
 					}
-						.main_content .col-xs-10 a:hover .webdesign_content .webdesign_button img{
-							display: block;
-							height: 6vw;
-							z-index: 10;
-						}
 
 				.main_content .col-xs-10 #webdesign .col-xs-4{
 					padding: 0px;
@@ -133,13 +124,11 @@ body{
 						position: absolute;
 					}
 					.main_content .col-xs-10 a .graphicdesign_content  .graphicdesign_button img{
-						display: none;
+						display: block;
+						height: 6.5vw;
+						width: 100%;
+						z-index: 10;
 					}
-						.main_content .col-xs-10 a:hover .graphicdesign_content  .graphicdesign_button img{
-							display: block;
-							height: 6vw;
-							z-index: 10;
-						}
 
 				.main_content .col-xs-10 .col-xs-4{
 					padding: 0px;
@@ -212,3 +201,18 @@ body{
 			background-size: cover;
 			background-color: rgba(255,255,255,1);
 		}
+
+.glyphicon-chevron-left{
+	font-size: 2vw;
+	position: absolute;
+	left: .75vw;
+	top: 40%;
+	color: rgba(0,0,0,1);
+}
+.glyphicon-chevron-right{
+	font-size: 2vw;
+	position: absolute;
+	right: .75vw;
+	top: 40%;
+	color: rgba(0,0,0,1);
+}

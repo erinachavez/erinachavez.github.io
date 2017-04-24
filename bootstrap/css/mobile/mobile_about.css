@@ -20,9 +20,6 @@ body{
 		width: 100%;
 		margin: 0px;
 	}
-		nav a:hover .col-xs-3{
-			height: 15vw;
-		}
 		nav a .nav_home,.nav_about,.nav_work,.nav_contact{
 			background-size: cover;
 			background-position: center bottom;
@@ -54,10 +51,6 @@ body{
 			nav a .col-xs-3 img{
 				display: none;
 			}
-				nav a:hover .col-xs-3 img{
-					display: block;
-					width: 25vw;
-				}
 
 
 	/* ------------------------- ABOUT CONTENT ------------------------- */
@@ -145,13 +138,11 @@ body{
 						color: rgba(0,0,0,1);
 					}
 					.main_content .col-xs-10 .resume_content a .resume_button img{
-						display: none;
+						display: block;
+						height: 6.5vw;
+						width: 100%;
+						z-index: 10;
 					}
-						.main_content .col-xs-10 .resume_content a:hover .resume_button img{
-							display: block;
-							height: 6vw;
-							z-index: 10;
-						}
 
 				/* resume dropdown */
 				.main_content .col-xs-10 .resume_content #resume h4{

@@ -73,7 +73,8 @@ body{
 				font-size: 4vw;
 				text-align: center;
 				font-family: fontfour;
-				margin: 12.5vw 0px 5vw 0px;
+				margin: 12.5vw 0px 6.3vw 0px;
+				padding: 3.5vw 0vw 0vw 0vw;
 				min-height: 9.9vw;
 			}
 
@@ -134,10 +135,6 @@ body{
 			nav a img{
 				display: none;
 				width: 20vw;
-			}
-
-			nav a:hover img{
-				display: block;
 			}
 				.col-xs-3{
 					padding: 0px;
