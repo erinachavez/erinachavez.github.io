@@ -146,13 +146,14 @@ body{
 
 				/* resume dropdown */
 				.main_content .col-xs-10 .resume_content #resume h4{
-					font-size: 2.75vw;
-					margin: -7.5vw 0px 0px 0px;
+					font-size: 2.25vw;
+					margin: 0vw 0px 0px 0px;
 					padding: 0px;
 
 				}		
 				.main_content .col-xs-10 .resume_content #resume hr{
 					margin: 2vw 0px 2vw 0px;
+					border-top: solid .35vw rgba(0,0,0,1);
 				}
 				.main_content .col-xs-10 .resume_content #resume .float_1,.float_2{
 					margin: 0px;
