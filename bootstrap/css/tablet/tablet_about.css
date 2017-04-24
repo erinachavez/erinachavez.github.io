@@ -20,9 +20,6 @@ body{
 		width: 100%;
 		margin: 0px;
 	}
-		nav a:hover .col-xs-3{
-			height: 15vw;
-		}
 		nav a .nav_home,.nav_about,.nav_work,.nav_contact{
 			background-size: cover;
 			background-position: center bottom;
@@ -54,10 +51,6 @@ body{
 			nav a .col-xs-3 img{
 				display: none;
 			}
-				nav a:hover .col-xs-3 img{
-					display: block;
-					width: 25vw;
-				}
 
 
 	/* ------------------------- ABOUT CONTENT ------------------------- */
@@ -102,7 +95,7 @@ body{
 					color: rgba(255,225,0,1);
 					display: inline;
 					float: right;
-					margin: -.5vw 16.75vw -10vw 0px;
+					margin: -.25vw 16vw -10vw 0px;
 				}
 				.typed-cursor{
 				    opacity          : 1;
@@ -145,18 +138,16 @@ body{
 						color: rgba(0,0,0,1);
 					}
 					.main_content .col-xs-10 .resume_content a .resume_button img{
-						display: none;
+						display: block;
+						height: 100%;
+						width: 100%;
+						z-index: 10;
 					}
-						.main_content .col-xs-10 .resume_content a:hover .resume_button img{
-							display: block;
-							height: 6vw;
-							z-index: 10;
-						}
 
 				/* resume dropdown */
 				.main_content .col-xs-10 .resume_content #resume h4{
 					font-size: 2.75vw;
-					margin: 0vw 0px 0px 0px;
+					margin: -7.5vw 0px 0px 0px;
 					padding: 0px;
 
 				}		
@@ -193,30 +184,34 @@ body{
 		position: absolute;
 		bottom: 0;
 		width: 100%;
-		height: 12vw;
+		height: 20vw;
 		background-color: rgba(0,0,0,1);
 	}
-
-		footer h3{
-			color: rgba(255,255,255,1);
-			font-size: 1.75vw;
-			text-align: right;
+		footer .col-xs-2{
+			margin: 0px 1vw 0px 0px;
 		}
+			footer h3{
+				color: rgba(255,255,255,1);
+				font-size: 2.75vw;
+				text-align: right;
+				margin: 2vw -10vw 0px 0px;
+			}
 
 		footer p{
 			color: rgba(255,255,255,1);
-			font-size: 1vw;
-			padding: .25vw 0px 0px 0px;
+			font-size: 2vw;
+			padding: 0px;
+			margin: 1.5vw 0px 0px 10vw;
 		}
 		footer #top{
-			padding: 1.5vw 0px 0px 0px;
+			margin: 2vw 0px 0px 10vw;
 		}
 		footer a:hover{
 			color: rgba(255,255,255,1);
 		}
 		footer #siteby{
 			text-align: right;
-			margin: 10vw 0px 0px 0px;
+			margin: 15vw 0px 0px -15vw;
 			padding: 0px;
 		}
 
