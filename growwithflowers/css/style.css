@@ -1,8 +1,12 @@
 /* UNIVERSAL */
-body{margin: 0;}
-h1,h2{font-family: "Roboto", sans-serif; font-weight: lighter;}
+body{margin: 0; background-image: url("../images/headline.jpg"); background-size: 100vw; background-repeat: no-repeat; background-position: 0 9.5vw;}
+h1,h2{font-weight: 100; font-family: "Roboto", sans-serif;}
 p{font-family: "Roboto Condensed", sans-serif;}
 .container{display: flex; flex-direction: row; justify-content: center;}
+#site_title{font-size: 3vw; margin-top: 3vw; text-align: center;}
+nav .item{width: 20vw; background-color: rgba(255,255,255,.6); color: rgba(0,0,0,1); text-decoration: none;}
+nav .item:hover{background-color: rgba(255,255,255,1);}
+	nav p{font-size: 1.5vw; margin: 2.75vw 0 1.5vw 0; text-align: center;}
 
 
 @media only screen and (max-width: 1200px) {
@@ -14,21 +18,15 @@ p{font-family: "Roboto Condensed", sans-serif;}
 
 
 /* HOME PAGE */
-#home{background-image: url("../images/headline.jpg"); background-size: 100vw; background-repeat: no-repeat; background-position: 0 9.5vw;}
-	#home h1{font-size: 3vw; margin-top: 3vw; text-align: center;}
-	#home nav .item{width: 20vw; background-color: rgba(255,255,255,.6); color: rgba(0,0,0,1); text-decoration: none;}
-	#home nav .item:hover{background-color: rgba(255,255,255,1);}
-		#home nav p{font-size: 1.5vw; margin: 2.75vw 0 1.5vw 0; text-align: center;}
-	#home #info_banner{width: 70vw; margin: 7.25vw auto; padding: 5vw; background-color: rgba(255,255,255,.6);}
-		#home #info_banner_text{text-align: left; margin: 0 0 2vw 0; font-size: 1.5vw;}
-		#home #info_banner a{text-align: center; text-decoration: none; color: rgba(0,0,0,1);}
-		#home #info_banner div{background-color: rgba(255,255,255,1); width: 30vw; margin: 0 auto; padding: 2vw 0; border-radius: 1vw;}
-		#home #info_banner a div p{font-size: 2vw; margin: 0;}
-	#home h2{font-size: 2vw; text-align: center; margin-top: 12.5vw;}
-	#home #camille{margin: -10vw 0 5vw 0;}
-		#home #camille img{width: 30vw; margin-right: 2vw; align-self: center;}
-		#home #camille p{width: 50vw; font-size: 1.5vw; text-align: left; margin-top: 11.6vw;}
-
+#home #info_banner{width: 70vw; margin: 7.25vw auto; padding: 5vw; background-color: rgba(255,255,255,.6);}
+	#home #info_banner_text{text-align: left; margin: 0 0 2vw 0; font-size: 1.5vw;}
+	#home #info_banner a{text-align: center; text-decoration: none; color: rgba(0,0,0,1);}
+	#home #info_banner div{background-color: rgba(255,255,255,1); width: 30vw; margin: 0 auto; padding: 2vw 0; border-radius: 1vw;}
+	#home #info_banner a div p{font-size: 2vw; margin: 0;}
+#home h2{font-size: 2vw; text-align: center; margin-top: 12.5vw;}
+#home #camille{margin: -10vw 0 5vw 0;}
+	#home #camille img{width: 30vw; margin-right: 2vw; align-self: center;}
+	#home #camille p{width: 50vw; font-size: 1.5vw; text-align: left; margin-top: 11.6vw;}
 
 
 /* ABOUT PAGE */
