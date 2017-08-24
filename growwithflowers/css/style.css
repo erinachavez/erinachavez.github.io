@@ -1,12 +1,24 @@
+/* FONTS */
+@font-face {
+    font-family: "CenturyGothic";
+    src: url(fonts/century_gothic.ttf) format("truetype");
+}
+@font-face {
+    font-family: "NewBaskerville";
+    src: url(fonts/new_baskerville.otf) format("truetype");
+}
+
 /* UNIVERSAL */
-body{margin: 0; background-image: url("../images/headline.jpg"); background-size: 100vw; background-repeat: no-repeat; background-position: 0 9.5vw;}
-h1,h2{font-weight: 100; font-family: "Roboto", sans-serif;}
-p{font-family: "Roboto Condensed", sans-serif;}
+body{margin: 0; background-image: url("../images/headline_2.jpg"); background-size: 100vw; background-repeat: no-repeat; background-position: 0 9.5vw;}
+h1,h2{font-weight: 100; font-family: "CenturyGothic", sans-serif;}
+p{font-family: "NewBaskerville", sans-serif; font-size: 18px;}
 .container{display: flex; flex-direction: row; justify-content: center;}
 #site_title{font-size: 3vw; margin-top: 3vw; text-align: center;}
 nav .item{width: 20vw; background-color: rgba(255,255,255,.6); color: rgba(0,0,0,1); text-decoration: none;}
 nav .item:hover{background-color: rgba(255,255,255,1);}
-	nav p{font-size: 1.5vw; margin: 2.75vw 0 1.5vw 0; text-align: center;}
+nav #active{background-color: rgba(255,255,255,1) !important;}
+	nav p{font-size: 1.5vw; margin: 2.75vw 0 1.5vw 0; text-align: center; font-family: "CenturyGothic";}
+}
 
 
 @media only screen and (max-width: 1200px) {
@@ -18,19 +30,26 @@ nav .item:hover{background-color: rgba(255,255,255,1);}
 
 
 /* HOME PAGE */
-#home #info_banner{width: 70vw; margin: 7.25vw auto; padding: 5vw; background-color: rgba(255,255,255,.6);}
+#home #info_banner{width: 70vw; margin: 12.5vw auto; padding: 5vw; background-color: rgba(255,255,255,.8);}
 	#home #info_banner_text{text-align: left; margin: 0 0 2vw 0; font-size: 1.5vw;}
 	#home #info_banner a{text-align: center; text-decoration: none; color: rgba(0,0,0,1);}
 	#home #info_banner div{background-color: rgba(255,255,255,1); width: 30vw; margin: 0 auto; padding: 2vw 0; border-radius: 1vw;}
-	#home #info_banner a div p{font-size: 2vw; margin: 0;}
-#home h2{font-size: 2vw; text-align: center; margin-top: 12.5vw;}
-#home #camille{margin: -10vw 0 5vw 0;}
-	#home #camille img{width: 30vw; margin-right: 2vw; align-self: center;}
-	#home #camille p{width: 50vw; font-size: 1.5vw; text-align: left; margin-top: 11.6vw;}
+	#home #info_banner a div p{font-size: 2vw; margin: 0; font-family: "CenturyGothic";}
+#home h2{font-size: 2vw; text-align: center; margin-top: 22vw;}
+#home #camille{margin: -8vw 0 5vw 0;}
+	#home #camille img{width: 30vw; margin: 125px 2vw 0vw 0vw; align-self: center;}
+	#home #camille #bullet_points{margin: 130px 0 0 1vw; font-size: 1.5vw; line-height: 115%;}
+	#home #camille p{font-size: 1.5vw; text-align: left; width: 55vw; margin: 108px 0 0 20px;}
 
 
 /* ABOUT PAGE */
-
+#about nav .item{background-color: rgba(255,255,255,.8);}
+#about #opacity{background-color: rgba(255,255,255,.8); height: 100vh; padding: 2.5vw 6vw;}
+#about #opacity h2{margin-top: 5vw;}
+#about #bach{justify-content: flex-start; margin: 0;}
+#about #bach #bullet_points{margin-left: 40px; font-size: 1.5vw; line-height: 115%;}
+#about #bach p{font-size: 1.5vw; text-align: left; width: 45vw; margin: -22px 0 0 20px;}
+#about #bach img{width: auto; height: 26vw; margin: -50px 0 0 10vw;}
 
 /* FLOWER REMEDIES PAGE */
 
