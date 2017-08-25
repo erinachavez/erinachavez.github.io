@@ -3,7 +3,7 @@
 @font-face {font-family: 'Montserrat'; font-style: normal; font-weight: 300; src: local('Montserrat Light'), local('Montserrat-Light'), url(fonts/Montserrat-Light.ttf);}
 
 /* UNIVERSAL */
-body{margin: 0; background-image: url(file:///Users/Erina/Documents/Websites/erinachavez.github.io/rmms_library_website/images/books_backround.jpg); background-size: 100vw; background-repeat: no-repeat;}
+body{margin: 0; background-image: url(images/"books_background.jpg"); background-size: 100vw; background-repeat: no-repeat;}
 	h1{font-family: "Montserrat"; margin: 0 0 2vw 0; font-size: 5vw; text-align: center; color: rgba(255,255,255,1);}
 	h2{font-family: "Montserrat"; font-size: 3vw; margin: 0;}
 	h3{font-family: traveling_typewriter; margin: 2vw 0 0 0; font-size: 2.25vw; text-align: center; color: rgba(255,255,255,1); letter-spacing: .25vw}
