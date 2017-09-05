@@ -8,6 +8,7 @@
 
         <!--PayPal Script-->
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <script src="https://www.paypalobjects.com/api/checkout.js"></script>
     </head>
 
@@ -32,7 +33,7 @@
                 <p id="p2">Answering your questions about what the remedies contain, how they are made, their history and safety.<br><br>Addressing your current situation and phase of life, feelings, patterns or habits that you would like to work on by taking remedies, and suggest remedies for you to try.<br><br>Instructions on how to take the remedies.<br><br>Where you can learn more about the system and how to use it.<br><br>Suggest a time frame for a follow-up consultation if desired, usually 2-3 weeks from the first consultation.</p>
             </div>
 
-            <div id="paypal-button-container"></div>
+            <div id="paypal-button"></div>
 
             <h2>Some Frequently Asked Questions</h2>
             <p id="p3">Q. Do I need to tell you all the details of my life in order to find the remedies I need to take?<br><br>A.  No. It is not necessary to disclose a lot of specific details. We are trying to find the feelings and mental states that need attention; however, many people find it works for them to explain the circumstances they are reacting to, or the background that gives rise to the mental states. This is a personal preference.<br><br><br>Q. Are my sessions confidential?<br><br>A. Yes. BFRPs are bound by a Code of Practice which states that practitioners are to provide a safe and confidential environment for consultations.  If a practitioner shares a case with a mentor (also bound by the Code of Practice), the identifying information will be omitted to protect the client. Please email me with questions about records.<br><br><br>Q. If I am taking other herbs, medications or other therapies will the Bach flowers interfere with them? <br><br>A. No. The Bach flower remedies do not interfere or react negatively with medication or other herbal therapies. It is best however, to consult the medical or other practitioner who prescribed or recommended your course of treatment. The Bach flower system is a complementary system, and not a substitute for medication or medical care.</p>
@@ -43,21 +44,15 @@
          <script>
             paypal.Button.render({
 
-                env: 'sandbox', // sandbox | production
+                env: 'sandbox', // Or 'sandbox',
 
-                // PayPal Client IDs - replace with your own
-                // Create a PayPal app: https://developer.paypal.com/developer/applications/create
                 client: {
                     sandbox:    'AUxPvCCkGpUono-H9NRruF2Tf7ToC3B2wWiooXGCggvpNw5sWhkDPtug0xOLyJFqJmJTNWGSIn5FwrB7',
                 },
 
-                // Show the buyer a 'Pay Now' button in the checkout flow
-                commit: true,
+                commit: true, // Show a 'Pay Now' button
 
-                // payment() is called when the button is clicked
                 payment: function(data, actions) {
-
-                    // Make a call to the REST api to create the payment
                     return actions.payment.create({
                         payment: {
                             transactions: [
@@ -69,17 +64,13 @@
                     });
                 },
 
-                // onAuthorize() is called when the buyer approves the payment
                 onAuthorize: function(data, actions) {
-
-                    // Make a call to the REST api to execute the payment
                     return actions.payment.execute().then(function() {
                         window.alert('Payment Complete!');
                     });
                 }
 
-            }, '#paypal-button-container');
-
+            }, '#paypal-button');
         </script>
     </body>
 </html>
