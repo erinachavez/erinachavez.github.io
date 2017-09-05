@@ -1,0 +1,87 @@
+/* FONTS */
+@font-face {
+    font-family: "Yantramanav";
+    src: url(fonts/yantramanav.ttf) format("truetype");
+}
+@font-face {
+    font-family: "Lato";
+    src: url(fonts/lato.ttf) format("truetype");
+}
+
+/* UNIVERSAL */
+body{background-image: url("../images/headline.jpg"); background-size: 100vw; margin: 0; background-repeat: none;}
+	.white_box{background-color: rgba(255,255,255,1);}
+	.opaque_box{background-color: rgba(255,255,255,.6);}
+	h1{font-family: Yantramanav; font-size: 40px; text-align: center;  font-weight: 100; margin: 0;}
+	h2{font-family: Yantramanav; font-size: 28px; text-align: center;  font-weight: 400; margin: 0;}
+	h3{font-family: Yantramanav; font-size: 24px; text-align: center;  font-weight: 400; margin: 0;}
+	h4{font-family: Yantramanav; font-size: 20px; text-align: center;  font-weight: 400; margin: 10px 0 0 0;}
+	p {font-family: Lato;        font-size: 16px; text-align: justify; font-weight: 400; margin: 0;}
+	#site_header{padding: 25px;}
+	.container{display: flex; flex-direction: row;}
+	nav{display: flex; flex-direction: row;}
+		nav a{text-decoration: none; color: rgba(0,0,0,1);}
+		nav a:hover{background-color: rgba(255,255,255,1);}
+			nav a div{width: 20vw; padding: 15px 0;}
+			nav a #active{background-color: rgba(255,255,255,1);}
+
+
+@media only screen and (max-width: 1200px) {
+}
+@media only screen and (max-width: 800px) {
+}
+@media only screen and (max-width: 560px) {
+}
+
+
+/* HOME PAGE */
+#home #landing_box{border-radius: 10px; padding: 50px; margin: 125px;}
+	#home #landing_box a{text-decoration: none; color: rgba(0,0,0,1);}
+		#home #landing_box #button{width: 300px; border-radius: 10px; margin: 25px auto 0 auto; padding: 10px;}
+#home #section1{padding: 50px 125px;}
+	#home #section1 .container{margin-top: 25px;}
+		#home #section1 .container img{height: 25vw; width: auto;}
+		#home #section1 .container #bullet_points{margin-left: 50px;}
+
+
+/* ABOUT PAGE */
+#about .white_box{padding: 50px 125px;}
+	#about .white_box a{color: rgba(125,125,125,1);}
+	#about .white_box #p1{text-align: center; margin-bottom: 50px;}
+	#about .white_box #h1{margin-bottom: 25px;}
+	#about .white_box #container1{margin-bottom: 50px;}
+		#about .white_box #container1 #bullet_points{margin-left: 50px;}
+		#about .white_box #container1 img{height: 300px; width: auto;}
+	#about .white_box #h2{margin-bottom: 25px;}
+	#about .white_box #p3{margin-bottom: 75px;}
+	#about .white_box #h3{margin-bottom: 25px;}
+	#about .white_box #p4{margin-bottom: 25px;}
+	#about .white_box #p5{margin-bottom: 25px;}
+	#about .white_box #p6{text-align: center;}
+	#about .white_box #container2{}
+		#about .white_box #container2 #p4{padding-right: 50px;}
+		#about .white_box #container2 img{height: 300px; width: auto; margin-top: 6px;}
+
+
+/* FLOWER REMEDIES PAGE */
+#flower_remedies .white_box{padding: 50px 125px;}
+	#flower_remedies .white_box p{margin-bottom: 25px;}
+	#flower_remedies .white_box table{margin: 0 auto;}
+		#flower_remedies .white_box table tr td{position: relative;}
+			#flower_remedies .white_box table tr td img{height: 250px; width: auto; margin: 25px;}
+			#flower_remedies .white_box table tr td:hover img{opacity: .25;}
+			#flower_remedies .white_box table tr td p{display: none; position: absolute; top: 0; left: 0; width: 150px; margin: 50px 0 0 35px; text-align: center; color: rgba(0,0,0,1);}
+			#flower_remedies .white_box table tr td:hover p{display: block;}
+				#flower_remedies .white_box table tr td p span{font-size: 20px;}
+
+
+/* CONSULTATION */
+#consultation .white_box{padding: 50px 125px;}
+	#consultation .white_box #p1{margin-bottom: 25px;}
+	#consultation .white_box .container{margin-bottom: 75px;}
+		#consultation .white_box #bullet_points{padding-left: 50px;}
+	#consultation .white_box h2{margin-bottom: 25px;}
+
+
+/* CONTACT */
+#contact{}
