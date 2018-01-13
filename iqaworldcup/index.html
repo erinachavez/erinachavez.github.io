@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>IQA World Cup 2018</title>
+		<link rel='stylesheet' href='style.css'>
+		<link rel='stylesheet' href='flipclock.css'>
+		<script src='http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js'></script>
+		<script src='flipclock.js'></script>
+		<link href='https://fonts.googleapis.com/css?family=Lato|Roboto' rel='stylesheet'>
+	</head>
+	<body id='home'>
+		<header>
+			<nav class='container'>
+				<a href='index.html'><div><h4>Home</h4></div></a>
+				<a href='about.html'><div><h4>About</h4></div></a>
+				<a href='teams.html'><div><h4>Participating Teams</h4></div></a>
+				<a href='contact.html'><div><h4>Contact</h4></div></a>
+			</nav>
+		</header>
+		<div id='splash'>
+			<div id='splashBox'>
+				<img class='noSkew' src='images/wc_logo.png'>
+				<h1 class='noSkew' >IQA World Cup 2018</h1>
+				<h3 class='noSkew' >Florence, Italy</h3>
+				<h3 class='noSkew' >27 June - 2 July, 2018</h3>
+			</div>
+		</div>
+		<div id='mainBody'>
+			<div id='clockLabels' class='container'>
+				<p>Days</p>
+				<p>Hours</p>
+				<p>Minutes</p>
+				<p>Seconds</p>
+			</div>
+			<div class='clock'></div>
+			<script type='text/javascript'>
+				var clock;
+				$(document).ready(function() {
+					var currentDate = new Date();
+					var futureDate  = new Date(2018, 5, 26, 0);
+					futureDate.setUTCHours(23);
+					var diff = futureDate.getTime() / 1000 - currentDate.getTime() / 1000;
+					clock = $('.clock').FlipClock(diff, {
+						clockFace: 'DailyCounter',
+						countdown: true
+					});
+				});
+			</script>
+			<h2>What is the IQA World Cup?</h2>
+			<p id='infoText'>The International Quidditch Association have selected the City of Florence to host the IQA World Cup, working in conjunction with Human Company. National quidditch teams from around the world, from the UK and Denmark to the USA and 2016 World Champions Australia, will fly to Florence to compete to be crowned international champions of the sport.</p>
+			<div id='infoBoxes' class='container'>
+				<div>
+					<h3>Watch</h3>
+					<p>Watch the best teams in the world compete in the most progressive sport in the world</p>
+				</div>
+				<div>
+					<h3>Stay</h3>
+					<p>Stay in Florence and enjoy the sights and festivities with our hospitality partner, Human Company</p>
+				</div>
+				<div>
+					<h3>Volunteer</h3>
+					<p>If you wish to volunteer for the World Cup, in any capacity, then please use the <a href='contact.html'>contact form</a></p>
+				</div>
+				<div>
+					<h3>Media/Press</h3>
+					<p>If you are from the press or media,  please contact <a href='mailto:media@iqasport.org'>media@iqasport.org</a> for us to assist</p>
+				</div>
+			</div>
+		</div>
+<!-- 		<div id='contact'>
+			<h2>Contact Us</h2>
+			<form id='contactForm' action='' method='POST'>
+				<input id='name' type='text' placeholder='Name'>
+				<input id='email' type='email' placeholder ='Email'>
+				<input id='subject' type='text' placeholder ='Subject'>
+				<textarea id='message' placeholder='Message'></textarea>
+				<button id='submit' type='submit'>Send</button>
+			</form>
+		</div> -->
+		<footer>
+			<div id='footerBox' class='container'>
+				<div>
+					<div id='logos' class='container'>
+						<img id='wcLogo' src='images/wc_logo.png'>
+						<h3>+</h3>
+						<img id='iqaLogo' src='images/IQAWhite.png'>
+					</div>
+					<p style='width: 275px;text-align: justify; margin: 10px 0 0 25px'>IQA and its activities are not licensed by, sponsored by or associated with Warner Bros., J.K. Rowling or their affiliates. 'Quidditch,' 'Harry Potter' and all related names, characters and indicia are trademarks of and © Warner Bros. - Harry Potter publishing rights © J.K. Rowling</p>
+				</div>
+				<div id='footerText' class='container'>
+					<div>
+						<p style='margin-bottom: 25px;'>Site Map</p>
+						<p><a href='home.html'>Home</a></p>
+						<p><a href='about.html'>About</a></p>
+						<p><a href='teams.html'>Participating Teams</a></p>
+						<p><a href='contact.html'>Contact</a></p>
+					</div>
+					<div>
+						<p style='margin-bottom: 25px;'>Social Media</p>
+						<p><a href='https://www.facebook.com/InternationalQuidditchAssociation/'>Facebook</a></p>
+						<p><a href='https://twitter.com/iqasport?lang=en'>Twitter</a></p>
+						<p><a href='https://www.instagram.com/iqaquidditch/'>Instagram</a></p>
+					</div>
+				</div>
+			</div>
+			<hr>
+			<div class='container' style='justify-content: space-between;'>
+				<p id='bottomLine'>@International Quidditch Association. All rights reserved.</p>
+				<p style='margin-right: 20px;'><a href='#home'>Top</a> &uarr;</p>
+			</div>
+		</footer>
+	</body>
+</html>

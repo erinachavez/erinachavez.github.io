@@ -1,0 +1,59 @@
+/* BASICS */
+	  h1{font-family:   'Lato', sans-serif; margin: 0; font-size: 50px; text-align: center;}
+	  h2{font-family:   'Lato', sans-serif; margin: 0; font-size: 40px; text-align: center;}
+	  h3{font-family: 'Roboto', sans-serif; margin: 0; font-size: 25px; text-align: center;}
+	  h4{font-family: 'Roboto', sans-serif; margin: 0; font-size: 20px; text-align: center; text-transform: uppercase;}
+	  /*h5{font-family: 'Roboto', sans-serif; margin: 0; font-size: 16px; text-align: right; color: #ffffff;}*/
+	  /*h6{font-family: 'Roboto', sans-serif; margin: 0; font-size: px;}*/
+	   p{font-family: 'Roboto', sans-serif; margin: 0; font-size: 16px;}
+
+   input{font-family: 'Roboto', sans-serif; margin: 0; font-size: 18px; display: block;}
+textarea{font-family: 'Roboto', sans-serif; margin: 0; font-size: 18px; display: block;}
+	   
+	   a{color: #ffffff;}
+
+body{margin: 0;}
+
+.container{display: flex;}
+
+/* HOME */
+#home{}
+	#home header{background-color: #267f01; z-index: 10; position: relative;}
+		#home header img{width: auto; height: 100px; margin: 8px 0 0 10px;}
+		#home header nav{justify-content: flex-end;}
+			#home header nav a{text-decoration: none;}
+				#home header nav a div{padding: 25px 35px;}
+				#home header nav a div:hover{background-color: rgba(255,255,255,0.25);}
+					#home header nav a div h4{color: #ffffff;}
+	#home #splash{background-image: url('images/background1.png'); background-size: cover;}
+		#home #splash #splashBox{background-color: rgba(255,255,255, 0.85); padding: 40px 0 65px 0; -webkit-transform: skewY(-20deg); -moz-transform: skewY(-20deg); -ms-transform: skewY(-20deg); -o-transform: skewY(-20deg); transform: skewY(-20deg);}
+			#home #splash #splashBox > .noSkew {-webkit-transform: skewY(20deg); -moz-transform: skewY(20deg); -ms-transform: skewY(20deg); -o-transform: skewY(20deg); transform: skewY(20deg);}
+			#home #splash #splashBox img{display: block; margin: 0 auto;}
+	#home #mainBody{padding: 40px 0; z-index: 10; position: relative;}
+		#home #mainBody #clockLabels{justify-content: center;}
+			#home #mainBody #clockLabels p:first-child{margin-left: 50px;}
+			#home #mainBody #clockLabels p:nth-child(2){margin-left: 150px;}
+			#home #mainBody #clockLabels p:nth-child(3){margin-left: 105px;}
+			#home #mainBody #clockLabels p:last-child{margin-left: 94px;}
+		#home #mainBody .clock{display: block; margin: 0 auto; width: 690px;}
+			#home #mainBody .clock .flip-clock-label{display: none !important;}
+		#home #mainBody h2{margin: 40px 0 25px 0;}
+		#home #mainBody #infoText{text-align: justify; width: 45vw; margin: 0 auto;}
+		#home #mainBody #infoBoxes{justify-content: center;}
+			#home #mainBody #infoBoxes div{width: 165px; height: 170px; margin: 50px 25px; padding: 25px 15px 0 15px; background-color: #fec200;}
+				#home #mainBody #infoBoxes div h3{color: #ffffff; margin-bottom: 15px;}
+				#home #mainBody #infoBoxes div p{color: #ffffff; text-align: center;}
+	#home footer{padding: 20px 50px 25px 25px; background-color: #555555;}
+		#home footer #footerBox{justify-content: space-between;}
+			#home footer p{margin-bottom: 5px; font-size: 12px; color: #ffffff;}
+				#home footer #logos #wcLogo{width: auto; height: 125px;}
+				#home footer #logos h3{color: #ffffff; margin-top: 50px;}
+				#home footer #logos #iqaLogo{width: auto; height: 50px; margin: 40px 0 0 20px;}
+			#home footer #footerText{margin: 50px 0 0 40px;}
+				#home footer #footerText div{margin: 0 25px;}
+					#home footer #footerText div p{text-align: right; font-size: 14px;}
+						#home footer #footerText div p a{text-decoration: none;}
+						#home footer #footerText div p a:hover{text-decoration: underline;}
+		#home footer hr{margin: 25px 0;}
+		#home footer #bottomLine{margin-left: 24px;}
+
