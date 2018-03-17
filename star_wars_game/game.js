@@ -194,8 +194,8 @@ function draw(){
 				rock1.display();
 				rock1.move();
 
-				fill(255,215,0,1);
-				text('count: '+count, 20, 50);
+				// fill(255,215,0,1);
+				// text('Count: '+count, 20, 50);
 
 				fill(255,255,255,.75);
 				rect(width/2-200,wall1,400,20);
