@@ -1,0 +1,93 @@
+/* BASICS */
+h1{font-family:   'Lato', sans-serif; margin: 0; font-size: 50px; text-align: center;}
+h2{font-family:   'Lato', sans-serif; margin: 0; font-size: 40px; text-align: center;}
+h3{font-family: 'Roboto', sans-serif; margin: 0; font-size: 25px; text-align: center;}
+h4{font-family: 'Roboto', sans-serif; margin: 0; font-size: 20px; text-align: center; text-transform: uppercase;}
+h5{font-family:   'Lato', sans-serif; margin: 0; font-size: 20px;}
+ p{font-family: 'Roboto', sans-serif; margin: 0; font-size: 16px;}
+ul{font-family: 'Roboto', sans-serif; margin: 0 0 0 25px; font-size: 16px;}
+ol{font-family: 'Roboto', sans-serif; margin: 0 0 0 25px; font-size: 16px;}
+ a{color: #ffffff;}
+
+body{margin: 0;}
+
+.container{display: flex;}
+
+/* FORM BASICS */
+   input{font-family: 'Roboto', sans-serif; margin: 0; font-size: 18px; display: block;}
+textarea{font-family: 'Roboto', sans-serif; margin: 0; font-size: 18px; display: block;}
+
+/* HEADER */
+header{background-color: #267f01; z-index: 10; position: relative;}
+	header nav{justify-content: flex-end;}
+		header nav a{text-decoration: none;}
+			header nav a div{padding: 25px 35px;}
+			header nav a div:hover{background-color: rgba(255,255,255,0.25);}
+				header nav a div h4{color: #ffffff;}
+
+/* FOOTER */
+footer{padding: 20px 50px 25px 25px; background-color: #232122;}
+	footer #footerBox{justify-content: space-between;}
+		footer #footerBox div{}
+			footer #footerBox div #footerLogos{}
+				footer #footerBox div #footerLogos #wcLogo{width: auto; height: 125px;}
+				footer #footerBox div #footerLogos h3{color: #ffffff; margin-top: 50px;}
+				footer #footerBox div #footerLogos #iqaLogo{width: auto; height: 50px; margin: 40px 0 0 20px;}
+				footer #footerBox div #footerLogoText{width: 275px; text-align: justify; margin: 10px 0 0 20px; font-size: 12px; color: #ffffff;}
+		footer #footerLinks{margin: 50px 0 0 40px;}
+			footer #footerLinks div{margin: 0 25px;}
+				footer #footerLinks div p{text-align: right; margin-bottom: 5px; color: #ffffff; font-size: 14px;}
+				footer #footerLinks div .footerHeading{margin-bottom: 25px;}
+					footer #footerLinks div p a{text-decoration: none;}
+					footer #footerLinks div p a:hover{text-decoration: underline;}
+	footer hr{margin: 25px 0;}
+		footer #bottomLine{justify-content: space-between;}
+			footer #bottomLine #bottomText{margin: 0 0 5px 20px; font-size: 12px; color: #ffffff;}
+			footer #bottomLine #bottomTextTop{margin: 0 20px 5px 0; font-size: 12px; color: #ffffff;}
+
+/* HOME */
+#home #splash{background-image: url('images/background1.png'); background-size: cover;}
+	#home #splash #splashBox{background-color: rgba(255,255,255, 0.85); padding: 40px 0 65px 0; -webkit-transform: skewY(-20deg); -moz-transform: skewY(-20deg); -ms-transform: skewY(-20deg); -o-transform: skewY(-20deg); transform: skewY(-20deg);}
+	#home #splash #splashBox > .noSkew {-webkit-transform: skewY(20deg); -moz-transform: skewY(20deg); -ms-transform: skewY(20deg); -o-transform: skewY(20deg); transform: skewY(20deg);}
+		#home #splash #splashBox img{display: block; margin: 0 auto;}
+#home #mainBody{padding: 40px 0; z-index: 10; position: relative;}
+	#home #mainBody #clockLabels{justify-content: center;}
+		#home #mainBody #clockLabels p:first-child{margin-left: 50px;}
+		#home #mainBody #clockLabels p:nth-child(2){margin-left: 150px;}
+		#home #mainBody #clockLabels p:nth-child(3){margin-left: 105px;}
+		#home #mainBody #clockLabels p:last-child{margin-left: 94px;}
+	#home #mainBody .clock{display: block; margin: 0 auto; width: 690px;}
+		#home #mainBody .clock .flip-clock-label{display: none !important;}
+	#home #mainBody h2{margin: 40px 0 25px 0;}
+	#home #mainBody #infoText{text-align: justify; width: 45vw; margin: 0 auto;}
+	#home #mainBody #infoBoxes{justify-content: center;}
+		#home #mainBody #infoBoxes div{width: 165px; height: 170px; margin: 50px 25px; padding: 25px 15px 0 15px; background-color: #267f01;}
+			#home #mainBody #infoBoxes div h3{color: #ffffff; margin-bottom: 15px;}
+			#home #mainBody #infoBoxes div p{color: #ffffff; text-align: center;}
+
+/* ABOUT */
+#about #mainBody{margin: 50px 15vw;}
+	#about #mainBody p{margin-left: 25px;}
+	#about #mainBody p .underline{text-decoration: underline;}
+
+/* TEAMS */
+#teams #mainBody{margin: 50px 15vw;}
+	#teams #mainBody #teamsHeading{margin-bottom: 50px;}
+		#teams #mainBody h5 a{color: #000000;}
+
+	#teams #mainBody .container{width: 435px; margin: 0 auto;}
+		#teams #mainBody .container div:first-child{margin-right: 50px;}
+		#teams #mainBody .container div:last-child{margin-left: 50px;}
+
+/* CONTACT */
+#contact #mainBody{padding: 50px 20vw;}
+	#contact #mainBody h2{margin-bottom: 25px;}
+	#contact #mainBody #contactForm{background-color: #fec200; padding: 25px 35px 25px 25px;}
+		#contact #mainBody #contactForm input{width: 100%; margin: 15px 0; border: none; padding: 5px;}
+		#contact #mainBody #contactForm input:first-child{margin: 0 0 15px 0;}
+		#contact #mainBody #contactForm textarea{width: 100%; border: none; padding: 5px; height: 150px;}
+		#contact #mainBody #contactForm button{width: 150px; display: block; margin: 25px auto 0 auto; border: none; border-radius: 5px; padding: 10px 0;}
+		#contact #mainBody #contactForm button:hover{opacity: 0.75; cursor: pointer;}
+	#contact #mainBody #contactText{margin-top: 25px; text-align: center;}
+		#contact #mainBody #contactText a{color: #000000;}
+
