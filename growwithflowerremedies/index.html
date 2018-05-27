@@ -1,43 +1,89 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-    <head>
-    	<title>Camille J. Ventura</title>
-        <meta name="description" content="">
+	<head>
+		<title>Camille J. Ventura</title>
+		<link href='css/style.css' rel='stylesheet'>
+		<link href='https://fonts.googleapis.com/css?family=Josefin+Sans|Questrial' rel='stylesheet'>
+		<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.0.10/css/all.css' integrity='sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg' crossorigin='anonymous'>
+	</head>
+	<body>
+		<header>
+			<h1>Camille J. Ventura</h1>
+			<h3>Bach Flower Remedies Practitioner</h3>
+			<nav class='container'>
+				<div></div>
+				<h3><a href='index.html' id='current'>Home</a></h3>
+				<h3><a href='about.html'>About</a></h3>
+				<h3><a href='flowers.html'>Flower Remedies</a></h3>
+				<h3><a href='consult.html'>Consultations</a></h3>
+				<h3><a href='contact.html'>Contact</a></h3>
+				<div></div>
+			</nav>
+		</header>
 
-        <link rel="stylesheet" href="css/style.css">
-    </head>
+		<div id='homeContent'>
+			<article id='getConsultation' class='table'>
+				<div class='table-cell'>
+					<div>
+						<h2>Welcome!</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam interdum pellentesque lacus. Etiam a tellus finibus, tempus eros et, dictum magna. Duis vitae venenatis ipsum. Pellentesque nec rutrum risus. Vivamus quis ipsum vitae est fringilla suscipit. Ut pulvinar ipsum volutpat, commodo orci id, ornare ante. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+						<br><br>
+						Nam interdum pellentesque lacus. Etiam a tellus finibus, tempus eros et, dictum magna. Duis vitae venenatis ipsum. Pellentesque nec rutrum risus. Vivamus quis ipsum vitae est fringilla suscipit. Ut pulvinar ipsum volutpat, commodo orci id.</p>
+						<form action='consult.html' method='POST'><button type='submit'>Get a Consultation</button></form>
+					</div>
+				</div>
+			</article>
+			<article id='bachFlowerRemediesAre'>
+				<h2>Bach Flower Remedies are:</h2>
+				<ul>
+					<li>Safe and natural</li>
+					<li>Used all over the world in more thann 66 countries</li>
+					<li>Effective for adults, children, and pets</li>
+					<li>Relevant to today's stressful lifestyles</li>
+					<li>Widely accessible online and in natural food stores, and can also be made at home by following the directions left by Dr. Bach</li>
+					<li>Easy to use</li>
+				</ul>
+			</article>
+			<hr>
+			<article id='workWithPractitioner'>
+				<h2>Why Work with a Practitioner?</h2>
+				<div class='container'>
+					<div>
+						<ul>
+							<li>You are having trouble deciding which remedies to take and want on objective view.</li>
+							<li>You are new to the system and would like to learn more about it and start using it.</li>
+							<li>You have personal development goals and would like support in using the remedies to help reach them.</li>
+							<li>The formula you have been taking has stopped working and you are not sure what to do.</li>
+							<li>You feel stuck in an area of your life and you have not found the right remedy to address this situation.</li>
+						</ul>
+						<p class='italic'>The role of the practitioner is to help others learn to use this simple system for themselves.</p>
+					</div>
+					<img src='images/camilleHome.jpg'>
+				</div>
+			</article>
+		</div>
 
-    <body id="home">
-        <div class="white_box" id="site_header">
-            <h1>Camille J. Ventura</h1>
-            <h4>Bach Flower Remedies Practitioner</h4>
-        </div>
-
-        <nav class="opaque_box">
-            <a href="index.html"><div id="active"><h3>Home</h3></div></a>
-            <a href="about.html"><div><h3>About</h3></div></a>
-            <a href="flowerremedies.html"><div><h3>Flower Remedies</h3></div></a>
-            <a href="consultations.html"><div><h3>Consultations</h3></div></a>
-            <a href="contact.html"><div><h3>Contact</h3></div></a>
-        </nav>
-
-        <div class="opaque_box" id="landing_box">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam interdum pellentesque lacus. Etiam a tellus finibus, tempus eros et, dictum magna. Duis vitae venenatis ipsum. Pellentesque nec rutrum risus. Vivamus quis ipsum vitae est fringilla suscipit. Ut pulvinar ipsum volutpat, commodo orci id, ornare ante. Nulla vestibulum odio in velit condimentum, vel convallis sem euismod. Praesent faucibus risus sed tellus viverra, vitae blandit nulla egestas. Morbi auctor risus eu sagittis laoreet. Ut rhoncus, lorem sed tincidunt vehicula, nisi magna consequat mauris, id faucibus leo tortor placerat enim. Nulla interdum mattis magna id auctor.</p>
-            <a href="consultation.html"><div class="white_box" id="button"><h3>Get a Consultation!</h3></div></a>
-        </div>
-
-        <div class="white_box" id="section1">
-            <h2>Why Work With a Practitioner?</h2>
-            <div class="container">
-                <img src="images/camille_2.jpg">
-                <p id="bullet_points">&#9675;&nbsp;&nbsp;&nbsp;<br><br>&#9675;&nbsp;&nbsp;&nbsp;<br><br>&#9675;&nbsp;&nbsp;&nbsp;<br><br><br>&#9675;&nbsp;&nbsp;&nbsp;<br><br>&#9675;&nbsp;&nbsp;&nbsp;</p>
-                <p>You are having trouble deciding which remedies to take and want on objective view.<br><br>You are new to the system and would like to learn more about it and start using it.<br><br>You have personal development goals and would like support in using the remedies to help reach them.<br><br>The formula you have been taking has stopped working and you are not sure what to do.<br><br>You feel stuck in an area of your life and you have not found the right remedy to address this situation.<br><br><br><i>The Bach Flower Remedies help us stay true to ourselves and our nature. The role of the practitioner is to help others learn to use this simple system for themselves.</i></p>
-            </div>
-        </div>
-
-        <div id="footer">
-            <p><a href="index.html">HOME</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="about.html">ABOUT</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="flowerremedies.html">FLOWER REMEDIES</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="consultations.html">CONSULTATIONS</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="contact.html">CONTACT</a></p>
-            <h4><a href="mailto:growwithflowers@gmail.com">growwithflowers@gmail.com</a></h4>
-        </div>
-    </body>
+		<footer class='container'>
+			<div id='footer1'>
+				<h1>Camille J. Ventura</h1>
+				<h3 class='italic'>Bach Flower Remedies Practitioner</h3>
+				<h3><a href='consult.html'>Get a Consultation</a></h3>
+			</div>
+			<div class='container'>
+				<div id='footer2'>
+					<h3>Contact</h3>
+					<p><a href='mailto:growwithflowerremedies@gmail.com'>growwithflowerremedies@gmail.com</a></p>
+					<p><a href='https://twitter.com/camitherese' target='_blank'><i class="fab fa-twitter"></i> @camitherese</a></p>
+				</div>
+				<div id='footer3'>
+					<h3>Site Map</h3>
+					<p><a href='index.html'>Home</a></p>
+					<p><a href='about.html'>About</a></p>
+					<p><a href='flowers.html'>Flower Remedies</a></p>
+					<p><a href='consult.html'>Consultations</a></p>
+					<p><a href='contact.html'>Contact</a></p>
+				</div>
+			</div>
+		</footer>
+	</body>
 </html>
