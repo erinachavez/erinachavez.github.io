@@ -61,11 +61,14 @@ footer{margin: 0; padding: 25px; background-color: #aaaaaa; justify-content: spa
 
 	#homeContent #getConsultation{display: table; width: 100%; height: 400px; background-image: url('../images/headline_2.jpg'); background-size: 100% auto; background-position: center center;}
 		#homeContent #getConsultation .table-cell div{width: 900px; margin: 0 auto; background-color: rgba(255,255,255,.75); padding: 25px;}
-			#homeContent #getConsultation .table-cell div form button{margin: 50px auto 0 auto;}
+			#homeContent #getConsultation .table-cell div form button{margin: 15px auto 0 auto;}
 
 	#homeContent #bachFlowerRemediesAre{width: 900px; margin: 50px auto 0 auto;}
-		#homeContent #bachFlowerRemediesAre ul{margin: 0 0 0 20px;}
-			#homeContent #bachFlowerRemediesAre ul li{margin: 0 0 10px 0;}
+		#homeContent #bachFlowerRemediesAre #retinaWrap{width: 200px; margin: 0;}
+			#homeContent #bachFlowerRemediesAre #retinaWrap img{width: 100%;}
+		#homeContent #bachFlowerRemediesAre div{margin: 0 0 0 25px; width: 675px;}
+			#homeContent #bachFlowerRemediesAre div ul{margin: 0 0 0 20px; width: 500px;}
+				#homeContent #bachFlowerRemediesAre div ul li{margin: 0 0 10px 0;}
 
 	#homeContent #workWithPractitioner{width: 900px; margin: 0 auto;}
 		#homeContent #workWithPractitioner .container{}
