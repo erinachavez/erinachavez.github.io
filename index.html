@@ -1,145 +1,62 @@
 <!DOCTYPE html>
 <html>
-	<!--~~~~~~~~~~ HEAD ~~~~~~~~~~-->
-	<head lang="en">
-		<meta charset="utf-8">
-	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-	    <meta name="viewport" content="width=device-width, initial-scale=1">
-	    
-	    <title>Erina Chavez</title>
+	<head>
+		<meta name='viewport' content='width=device-width, initial-scale=1.0'>
 
-	    <link rel="icon" type="image/png" href="images/favicon.png">
+		<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+		<script type='text/javascript' src='js/typed/lib/typed.min.js'></script>
 
-	    <!-- Bootstrap Core CSS -->
-	    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-	    <!-- Media query for narrow browser width -->
-		<link rel="stylesheet" media="only screen and (max-width: 480px)" href="bootstrap/css/mobile/mobile_home.css">
-
-		<!-- Media query for medium browser width -->
-		<link rel="stylesheet" media="only screen and (min-width: 481px) and (max-width: 960px)" href="bootstrap/css/tablet/tablet_home.css">
-
-		<!-- Media query for full browser width -->
-		<link rel="stylesheet" media="only screen and (min-width: 961px)" href="bootstrap/css/custom/custom_home.css">
-
-		<!-- Prevent smartphones from scaling pages down -->
-		<meta name="viewport" content="initial-scale=1">
+		<link type='text/css' rel='stylesheet' href='css/style.css'>
+		<script type='text/javascript' src='js/custom.js'></script>
 	</head>
 
-	<body>
-
-		<!--~~~~~~~~~~ MAIN CONTENT ~~~~~~~~~~-->
-		<div class="row">
-
-			<!-- left sidebar column -->
-			<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
-
-			<!-- content column -->
-			<div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
-				
-				<!--~~~~~~~~~~ HEADER ~~~~~~~~~~-->
-				<div class="typed_1">
-					<div id="typed-strings_1">
-					    <p>ERINA CHAVEZ</p>
-					</div>
-					<span id="typed_1"></span>
-				</div>
-
-				<div class="typed_2 hidden">
-					<div id="typed-strings_2">
-					    <p>Erina Chavez</p>
-					</div>
-					<span id="typed_2"></span>
-				</div>
-
-				<div class="typed_3 hidden">
-					<div id="typed-strings_3">
-					    <p>ERINA CHAVEZ</p>
-					</div>
-					<span id="typed_3"></span>
-				</div>
-
-				<div class="typed_4 hidden">
-					<div id="typed-strings_4">
-					    <p>ERINA CHAVEZ</p>
-					</div>
-					<span id="typed_4"></span>
-				</div>
-
-				<div class="typed_5 hidden">
-					<div id="typed-strings_5">
-					    <p>ERINA CHAVEZ</p>
-					</div>
-					<span id="typed_5"></span>
-				</div>
-
-				<div class="header_subtitle">
-					<h2>I am a graphic and web designer currently attending New York University. <br /> This is a portfolio of the varied projects I've done.</h2>
-				</div>
-
-				<!--~~~~~~~~~~ NAVIGATION ~~~~~~~~~~-->
-				<nav class="row">
-					<a href="index.html">
-						<div class="nav_home col-xs-3 col-sm-3 col-md-3 col-lg-3">
-							<h3>HOME</h3>
-							<img src="images/hover.png" />
-						</div>
-					</a>
-					<a href="about.html">
-						<div class="nav_about col-xs-3 col-sm-3 col-md-3 col-lg-3">
-							<h3>ABOUT</h3>
-							<img src="images/hover.png" />
-						</div>
-					</a>
-					<a href="work.html">
-						<div class="nav_work col-xs-3 col-sm-3 col-md-3 col-lg-3">
-							<h3>WORK</h3>
-							<img src="images/hover.png" />
-						</div>
-					</a>
-					<a href="contact.html">
-						<div class="nav_contact col-xs-3 col-sm-3 col-md-3 col-lg-3">
-							<h3>CONNECT</h3>
-							<img src="images/hover.png" />
-						</div>
-					</a>
-				</nav>
+	<body id='home' onload='typed_load()'>
+		<div id='typeBlock'>
+			<div id='typeText'>
+				<span><span id='font1'>Erina Chavez</span></span>
+				<span><span id='font2' style='color: rgb(156,199,64);'>Erina Chavez</span></span>
+				<span><span id='font3' style='color: rgb(252,201,48);'>Erina Chavez</span></span>
+				<span><span id='font4' style='color: rgb(237,102,122);'>Erina Chavez</span></span>
+				<span><span id='font5' style='color: rgb(28,174,214);'>Erina Chavez</span></span>
 			</div>
+			<h1 id='typeHere'></h1>
+		</div>
 
-			<!-- right sidebar column -->
-			<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
-		</body>
+		<h3>
+			I am a web and graphics designer currently attending New York University.
+			<br>
+			This is a portfolio of various projects I have done.
+		</h3>
 
-		<!--~~~~~~~~~~ FOOTER ~~~~~~~~~~-->
-		<footer class="row">
-			<div class="container col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
-			<div class="container col-xs-2 col-sm-2 col-md-2 col-lg-2">
-				<h3>ERINA CHAVEZ<br />PORTFOLIO</h3>
+		<nav>
+			<div>
+				<h2 id='homeh2'>Home</h2>
+				<h2 id='abouth2'>About</h2>
+				<h2 id='worksh2'>Works</h2>
+				<h2 id='connecth2'>Connect</h2>
 			</div>
-			<div class="container col-xs-6 col-sm-6 col-md-6 col-lg-6">
-				<a href="index.html"><p id="top">HOME</p></a>
-				<a href="about.html"><p>ABOUT</p></a>
-				<a href="work.html"><p>WORK</p></a>
-				<a href="contact.html"><p>CONNECT</p></a>
-			</div>
-			<div class="container col-xs-2 col-sm-2 col-md-2 col-lg-2">
-				<p id="siteby">SITE BY ERINA CHAVEZ</p>
-			</div>
-			<div class="container col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
-		</footer>
+			<svg>
+				<defs>
+					<filter id='f1' x='-25' y='-25' width='300' height='450'>
+						<feOffset result='offOut' in='SourceGraphic' dx='0' dy='0' />
+						<feColorMatrix result = 'matrixOut' in = 'offOut' type = 'matrix' values = '0.2 0 0 0 0 0 0.2 0 0 0 0 0 0.2 0 0 0 0 0 1 0'/>
+						<feGaussianBlur result='blurOut' in='matrixOut' stdDeviation='10' />
+						<feBlend in='SourceGraphic' in2='blurOut' mode='normal' />
+					</filter>
+				</defs>
 
-		<!--~~~~~~~~~~ SCRIPTS ~~~~~~~~~~-->
-		<!-- jquery -->
-		<script src="bootstrap/js/jquery.js"></script>
+				<polygon class='homeh2' onclick="location.href='index.html'" points='63.75 18.75 206.25 48.75 168.75 318.75 112.5 281.25 93.75 311.25 18.75 281.25 48.75 168.75 18.75 135 60 75' stroke='rgb(156,199,64)' fill='rgb(156,199,64)' stroke-width='1'/>
+				<polygon class='abouth2' onclick="location.href='about.html'" points='225 26.25 187.5 281.25 243.75 281.25 262.5 318.75 375 262.5 375 206.25 348.75 131.25 412.5 56.25 337.5 63.75 356.25 18.75' stroke='rgb(252,201,48)' fill='rgb(252,201,48)' stroke-width='1'/>
+				<polygon class='worksh2' onclick="location.href='work.html'" points='363.75 135 458.25 18.75 555 37.5 525 131.25 555 206.25 525 243.75 555 318.75 389.25 300 390 206.25' stroke='rgb(237,102,122)' fill='rgb(237,102,122)' stroke-width='1'/>
+				<polygon class='connecth2' onclick="location.href='contact.html'" points='543.75 131.25 573.75 206.25 543.75 243.75 573.75 318.75 712.5 281.25 693.75 198.75 731.25 187.5 731.25 56.25 675 75 675 18.75 630 45 573.75 37.5' stroke='rgb(28,174,214)' fill='rgb(28,174,214)' stroke-width='1'/>
 
-		<!-- jquery core js-->
-		<script src="bootstrap/js/bootstrap.min.js"></script>
+				<!-- <polygon class='homeh2' onclick="location.href='index.html'" points='85 25 275 65 225 425 150 375 125 415 25 375 65 225 25 180 80 100' stroke='rgb(255,255,255)' fill='rgb(255,255,255)' stroke-width='1'/>
+				<polygon class='abouth2' onclick="location.href='about.html'" points='300 35 250 375 325 375 350 425 500 350 500 275 465 175 550 75 450 85 475 25' stroke='rgb(252,201,48)' fill='rgb(252,201,48)' stroke-width='1'/>
+				<polygon class='worksh2' onclick="location.href='work.html'" points='485 180 611 25 740 50 700 175 740 275 700 325 740 425 519 400 520 275' stroke='rgb(237,102,122)' fill='rgb(237,102,122)' stroke-width='1'/>
+				<polygon class='connecth2' onclick="location.href='contact.html'" points='725 175 765 275 725 325 765 425 950 375 925 265 975 250 975 75 900 100 900 25 840 60 765 50' stroke='rgb(28,174,214)' fill='rgb(28,174,214)' stroke-width='1'/> -->
+			</svg>
+		</nav>
 
-		<!-- custom js -->
-		<script src="bootstrap/js/custom/custom_home.js"></script>
-
-		<!-- typed js -->
-		<script src="bootstrap/js/typed.js"></script>
-		
+		<footer></footer>
 	</body>
 </html>

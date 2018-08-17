@@ -1,268 +1,51 @@
 <!DOCTYPE html>
 <html>
-	<!--~~~~~~~~~~ HEAD ~~~~~~~~~~-->
-	<head lang="en">
-		<meta charset="utf-8">
-	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-	    <meta name="viewport" content="width=device-width, initial-scale=1">
-	    
-	    <title>Erina Chavez</title>
+	<head>
+		<meta name='viewport' content='width=device-width, initial-scale=1.0'>
 
-	    <link rel="icon" type="image/png" href="images/favicon.png">
+		<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+		<script type='text/javascript' src='js/typed/lib/typed.min.js'></script>
 
-	    <!-- Bootstrap Core CSS -->
-	    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-	    <!-- Media query for narrow browser width -->
-		<link rel="stylesheet" media="only screen and (max-width: 480px)" href="bootstrap/css/mobile/mobile_about.css">
-
-		<!-- Media query for medium browser width -->
-		<link rel="stylesheet" media="only screen and (min-width: 481px) and (max-width: 960px)" href="bootstrap/css/tablet/tablet_about.css">
-
-		<!-- Media query for full browser width -->
-		<link rel="stylesheet" media="only screen and (min-width: 961px)" href="bootstrap/css/custom/custom_about.css">
-
-		<!-- Prevent smartphones from scaling pages down -->
-		<meta name="viewport" content="initial-scale=1">
+		<link type='text/css' rel='stylesheet' href='css/style.css'>
+		<script type='text/javascript' src='js/custom.js'></script>
 	</head>
 
-	<body>
-
-		<!--~~~~~~~~~~ NAVIGATION ~~~~~~~~~~-->
-		<nav class="row">
-			<a href="index.html">
-				<div class="nav_home col-xs-3 col-sm-3 col-md-3 col-lg-3">
-					<h3>HOME</h3>
-					<img src="images/hover_2.png" />
-				</div>
-			</a>
-			<a href="about.html">
-				<div class="nav_about col-xs-3 col-sm-3 col-md-3 col-lg-3">
-					<h3>ABOUT</h3>
-					<img src="images/hover_2.png" />
-				</div>
-			</a>
-			<a href="work.html">
-				<div class="nav_work col-xs-3 col-sm-3 col-md-3 col-lg-3">
-					<h3>WORK</h3>
-					<img src="images/hover_2.png" />
-				</div>
-			</a>
-			<a href="contact.html">
-				<div class="nav_contact col-xs-3 col-sm-3 col-md-3 col-lg-3">
-					<h3>CONNECT</h3>
-					<img src="images/hover_2.png" />
-				</div>
-			</a>
-		</nav>
-
-		<!--~~~~~~~~~~ MAIN CONTENT ~~~~~~~~~~-->
-		<div class="main_content row">
-
-			<!-- left sidebar column -->
-			<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
-
-			<!-- content column -->
-			<div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
-
-				<!-- about content -->
-				<div class="about_content_desktop row">
-					<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-						<img src="images/about_1.jpg" />
-					</div>
-
-					<div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
-						<h2>Erina Chavez </h2>
-
-						<div class="typed_1">
-							<div id="typed-strings_1">
-							    <p>is...</p>
-							</div>
-							<span id="typed_1"></span>
-						</div>
-
-						<p>Hello! I am a current sophomore attending the Gallatin School of Individualized Study at New York University. There, I am combining graphic arts, web design, and computer programming to create an all encompassing major that serves my future goals to be a <span class="highlighter_go">creative</span> and <span class="highlighter_go">skilled</span> web developer. My experience ranges from small projects I've done to help on-campus clubs, to being hired to redesign websites for small businesses.<br /><br />My interest in web design began early in high school, when we were expected to maintain a digital portfolio of the projects and assignments we had completed. Being born in Koshigaya, Japan and raised in San Diego, California my design aesthetics combined both Japan's unyielding attention to detail, and California's <span class="highlighter_go">adventurous</span> warmth. Now, living and studying in New York, I also strive to ensure that my work is <span class="highlighter_go">focused</span>, minimal, and <span class="highlighter_go">effective</span>.<br /><br />Outside of my school and work pursuits, I enjoy playing guitar, playing muggle quidditch, traveling, and tutoring those interested in the computer sciences.</p>
-					</div>
-				</div>
-
-				<div class="about_content_mobile">
-					<img src="images/about_1.jpg" />
-
-					<h2>Erina Chavez </h2>
-
-					<div class="typed_1">
-						<div id="typed-strings_1">
-						    <p>is...</p>
-						</div>
-						<span id="typed_1"></span>
-					</div>
-
-					<p class="about_text_1">Hello! I am a current sophomore attending the Gallatin School of Individualized Study at New York University. There, I am combining graphic arts, web design, and computer programming to create an all encompassing major that serves my future goals to be a <span class="highlighter_go">creative</span> and <span class="highlighter_go">skilled</span> web developer. My experience ranges from small projects I've done to help on-campus&nbsp;&nbsp; clubs,&nbsp;&nbsp; to&nbsp;&nbsp; being&nbsp;&nbsp; hired&nbsp; to&nbsp; redesign</p>
-					<p class="about_text_2">websites for small businesses. My interest in web design began early in high school, when we were expected to maintain a digital portfolio of the projects and assignments we had completed. Being born in Koshigaya, Japan and raised in San Diego, California my design aesthetics combined both Japan's unyielding attention to detail, and California's <span class="highlighter_go">adventurous</span> warmth. Now, living and studying in New York, I also strive to ensure that my work is <span class="highlighter_go">focused</span>, minimal, and <span class="highlighter_go">effective</span>.<br /><br />Outside of my school and work pursuits, I enjoy playing guitar, playing muggle quidditch, traveling, and tutoring those interested in the computer sciences.</p>
-				</div>
-
-				<!-- resume content -->
-				<div class="resume_content">
-
-					<!-- resume button -->
-					<a href="#resume" data-toggle="collapse">
-						<div class="resume_button">
-							<h3>RÉSUMÉ</h3>
-							<img src="images/hover_about.png" />
-						</div>
-					</a>
-					
-					<!-- resume dropdown -->
-					<div id="resume" class="collapse">
-						<br /><br />
-						<h4>EDUCATION</h4>
-						<hr />
-						<p class="float_1"><b>New York University</b></p>
-						<p class="float_2"><i>Full-Time Student</i> | New York, NY | Expected Graduation: May 2019</p>
-							<p class="break">Attend the Gallatin School of Individualized Study studying Graphic Design and Computer Sciences</p>
-							<p class="break">Minor in Web Programming and Applications</p>
-							<p class="break">Studied abroad in London, England from January 2017—May 2017</p>
-							<p class="break">Unweighted GPA: 3.78</p>
-							<br />
-						<p class="float_1"><b>High Tech High North County</b></p>
-						<p class="float_2"><i>Full-Time Student</i> | San Marcos, CA | August 2011-June 2015</p>
-							<p class="break">A public charter school who teaches project based learning for post secondary success</p>
-							<p class="break">Unweighted GPA: 3.94</p>
-							<br />
-						<p class="float_1"><b>Palomar College</b></p>
-						<p class="float_2"><i>Part-Time Student</i> | San Marcos, CA | April 2013-May 2015</p>
-							<p class="break">Classes Completed: Trigonometry, College Algebra, Calculus 1, Fundamentals of Music</p>
-						<br /><br /><br />
-
-						<h4>WORK EXPERIENCE</h4>
-						<hr />
-						<p class="float_1"><b>Big Apple Buddy</b></p>
-						<p class="float_2"><i>Web Developer</i> | New York, NY | July 2017-Present</p>
-							<p class="break">Web developer for the international buying and shipping company, Big Apple Buddy.</p>
-							<br />
-						<p class="float_1"><b>International Quidditch Association</b></p>
-						<p class="float_2"><i>Graphic Designer</i> | New York, NY | June 2017-Present</p>
-							<p class="break">Member of the graphic design team for the international governing organization of quidditch</p>
-							<br />
-						<p class="float_1"><b>Thinking Through Dancing</b></p>
-						<p class="float_2"><i>Graphic and Web Designer</i> | New York, NY | December 2016-Present</p>
-							<p class="break">Lead poster and website designer for NYU non-profit dance education organization</p>
-							<br />
-						<p class="float_1"><b>Stern IT Department</b></p>
-						<p class="float_2"><i>Administrative Assistant</i> | New York, NY | January 2016-January 2017</p>
-							<p class="break">Oversee front desk, manage department purchases, track employee hours, and supply work spaces</p>
-							<br />
-						<p class="float_1"><b>VisTix Ticket Office</b></p>
-						<p class="float_2"><i>Sales Assistant</i> | Vista, CA | May 2016-August 2017</p>
-							<p class="break">Sell tickets to outdoor musicals in person and over the phone via quality customer service</p>
-							<br />
-						<p class="float_1"><b>Moonlight Stage Productions</b></p>
-						<p class="float_2"><i>Amphitheatre Attendant</i> | Vista, CA | June 2014-August 2015</p>
-							<p class="break">Maintain the Moonlight Amphitheatre by working in a fast-paced and team oriented environment</p>
-							<br />
-						<p class="float_1"><b>KDR PR &amp; STEAMConnect</b></p>
-						<p class="float_2"><i>Intern</i> | San Diego, CA | September 2014-March 2015</p>
-							<p class="break">Wrote social media and blog posts, improved two websites, and aided with event planning</p>
-							<br />
-						<p class="float_1"><b>High Tech High North County Athletics Department</b></p>
-						<p class="float_2"><i>Web Designer/Intern</i> | San Marcos, CA | May 2014-June 2014</p>
-							<p class="break">Created a website for the HTHNC Athletics Department so that their school community could keep track of all sporting events happening throughout the year</p>
-							<br />
-						<p class="float_1"><b>Walbottle School of First Choice</b></p>
-						<p class="float_2"><i>Intern</i> | Newcastle Upon Tyne, England | May 2014</p>
-							<p class="break">Through collaborative projects, implemented new teaching methods into an international school</p>
-							<br />
-						<p class="float_1"><b>Vista's Icebox Jr.</b></p>
-						<p class="float_2"><i>Cashier</i> | Vista, CA | June 2013-August 2013</p>
-							<p class="break">At the neighborhood sandwich shop I took orders, worked the cash register, cleaned, and restocked</p>
-						<br /><br /><br />
-
-						<h4>EXTRACURRICULARS</h4>
-						<hr />
-						<p class="float_1"><b>The Pigeons NYU Quidditch Team</b></p>
-						<p class="float_2"><i>Co-Captain</i> | New York, NY | September 2015-Present</p>
-							<p class="break">Co-Captain of the competitive NYU team, in charge of leading practices and coaching in games</p>
-							<br />
-						<p class="float_1"><b>Raptor Report Club</b></p>
-						<p class="float_2"><i>Founder &amp; President</i> | San Diego, CA | September 2014-June 2015</p>
-							<p class="break">Through peer interactions, learned how to lead a team, manage time, and utilize marketing skills</p>
-							<br />
-						<p class="float_1"><b>Music Club</b></p>
-						<p class="float_2"><i>Founder &amp; President</i> | San Diego, CA | September 2013-June 2015</p>
-							<p class="break">Through peer interactions, learned teaching techniques, leadership qualities, and outreach skills</p>
-							<br />
-						<p class="float_1"><b>Quetzal Mama Scholars Program</b></p>
-						<p class="float_2"><i>Scholar</i> | San Diego, CA | May 2014-May 2015</p>
-							<p class="break">Chosen to receive free tutoring that aids high-potential students in the college application process</p>
-							<br />
-						<p class="float_1"><b>Track &amp; Field + Cross Country</b></p>
-						<p class="float_2"><i>Varsity Athlete</i> | San Diego, CA | February 2011-June 2014</p>
-							<p class="break">Received Tenacity Award</p>
-						<br /><br /><br />
-
-						<h4>AWARDS &amp; HONORS</h4>
-						<hr />
-						<p class="float_1"><b>Dean's Scholarship</b></p>
-						<p class="float_2"><i>Recipient</i> | New York, NY | February 2017</p>
-							<p class="break">$500 award sum presented by the Gallatin School of Individualized Study within New York University</p>
-							<br />
-						<p class="float_1"><b>Global Pathways Scholarship</b></p>
-						<p class="float_2"><i>Recipient</i> | New York, NY | December 2016</p>
-							<p class="break">$4,000 award sum presented by New York University to assist with my costs while studying abroad in the spring of 2017</p>
-							<br />
-						<p class="float_1"><b>Santander Universities Study Abroad Scholarship</b></p>
-						<p class="float_2"><i>Recipient</i> | New York, NY | November 2016</p>
-							<p class="break">$3,000 award sum presented by Santander through New York University to assist with my costs while studying abroad in the spring of 2017</p>
-							<br />
-						<p class="float_1"><b>Dean's List</b></p>
-						<p class="float_2"><i>Recipient</i> | New York, NY | May 2016</p>
-							<p class="break">Was placed on the Gallatin School of Individualized Study's Dean's List in the spring of 2016 for receiving an average GPA of 3.92 that semester</p>
-						<br /><br /><br />
-
-						<h4>SKILLS</h4>
-						<hr />
-						<p id="skills">Adobe Illustrator &nbsp;|&nbsp; Photoshop &nbsp;|&nbsp; InDesign &nbsp;|&nbsp; HTML &nbsp;|&nbsp; CSS &nbsp;|&nbsp; Python &nbsp;|&nbsp; Microsoft Office &nbsp;|&nbsp; Wordpress &nbsp;|&nbsp; iMovie</p>
-					</div>
-				</div>
+	<body id='about'>
+		<div id='main'>
+			<div style='height:210px;'>
+				<h3>ABOUT</h3>
+				<p>
+					<br>
+					Hi, my name is Erina Chavez (if you didn't already get that from the home page). At the moment, I'm finishing out my final year at the Gallatin School of Individualized Study at NYU, where I have been studying web programming, computer science, and graphic design in tandem. I absolutely love what I am doing, and have graciously been involved in a wide range of projects from web design for the <a href='http://iqasport.org/world-cup-2018' target='_blank'>International Quidditch Association</a>, to application development for the NYC startup, <a href='http://bigapplebuddy.com' target='_blank'>Big Apple Buddy</a>. Not to mention <a href='work.html'>dozens of smaller projects</a> for friends and myself.
+					<br><br>
+					Feel free to <a href='contact.html'>get in touch</a>!
+				</p>
 			</div>
 
-			<!-- right sidebar column -->
-			<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
+			<nav>
+				<div>
+					<h2 id='homeh2'>Home</h2>
+					<h2 id='abouth2'>About</h2>
+					<h2 id='worksh2'>Works</h2>
+					<h2 id='connecth2'>Connect</h2>
+				</div>
+				<svg>
+					<defs>
+						<filter id='f1' x='-25' y='-25' width='300' height='450'>
+							<feOffset result='offOut' in='SourceGraphic' dx='0' dy='0' />
+							<feColorMatrix result = 'matrixOut' in = 'offOut' type = 'matrix' values = '0.2 0 0 0 0 0 0.2 0 0 0 0 0 0.2 0 0 0 0 0 1 0'/>
+							<feGaussianBlur result='blurOut' in='matrixOut' stdDeviation='10' />
+							<feBlend in='SourceGraphic' in2='blurOut' mode='normal' />
+						</filter>
+					</defs>
+
+					<polygon class='homeh2' onclick="location.href='index.html'" points='63.75 18.75 206.25 48.75 168.75 318.75 112.5 281.25 93.75 311.25 18.75 281.25 48.75 168.75 18.75 135 60 75' stroke='rgb(156,199,64)' fill='rgb(156,199,64)' stroke-width='1'/>
+					<polygon class='abouth2' onclick="location.href='about.html'" points='225 26.25 187.5 281.25 243.75 281.25 262.5 318.75 375 262.5 375 206.25 348.75 131.25 412.5 56.25 337.5 63.75 356.25 18.75' stroke='rgb(252,201,48)' fill='rgb(252,201,48)' stroke-width='1'/>
+					<polygon class='worksh2' onclick="location.href='work.html'" points='363.75 135 458.25 18.75 555 37.5 525 131.25 555 206.25 525 243.75 555 318.75 389.25 300 390 206.25' stroke='rgb(237,102,122)' fill='rgb(237,102,122)' stroke-width='1'/>
+					<polygon class='connecth2' onclick="location.href='contact.html'" points='543.75 131.25 573.75 206.25 543.75 243.75 573.75 318.75 712.5 281.25 693.75 198.75 731.25 187.5 731.25 56.25 675 75 675 18.75 630 45 573.75 37.5' stroke='rgb(28,174,214)' fill='rgb(28,174,214)' stroke-width='1'/>
+				</svg>
+			</nav>
 		</div>
-
-		<!-- FOOTER -->
-		<footer class="row">
-			<div class="container col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
-			<div class="container col-xs-2 col-sm-2 col-md-2 col-lg-2">
-				<h3>ERINA CHAVEZ<br />PORTFOLIO</h3>
-			</div>
-			<div class="container col-xs-6 col-sm-6 col-md-6 col-lg-6">
-				<a href="index.html"><p id="top">HOME</p></a>
-				<a href="about.html"><p>ABOUT</p></a>
-				<a href="work.html"><p>WORK</p></a>
-				<a href="contact.html"><p>CONNECT</p></a>
-			</div>
-			<div class="container col-xs-2 col-sm-2 col-md-2 col-lg-2">
-				<p id="siteby">SITE BY ERINA CHAVEZ</p>
-			</div>
-			<div class="container col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
-		</footer>
-
-		<!--~~~~~~~~~~ SCRIPTS ~~~~~~~~~~-->
-		<!-- jguery -->
-		<script src="bootstrap/js/jquery.js"></script>
-
-		<!-- jguery core js-->
-		<script src="bootstrap/js/bootstrap.min.js"></script>
-
-		<!-- typed js -->
-		<script src="bootstrap/js/typed.js"></script>
-
-        <!-- highlighter js -->
-        <script src="bootstrap/js/highlighter.js"></script>
-
-		<!-- custom js -->
-		<script src="bootstrap/js/custom/custom_about.js"></script>
-
+		<footer></footer>
 	</body>
 </html>

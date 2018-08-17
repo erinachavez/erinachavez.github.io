@@ -1,0 +1,85 @@
+body{margin: 0; font-family: Helvetica, sans-serif;}
+
+h1{margin: 0; font-weight: 400; font-size: 75px; line-height: 75px;}
+h2{margin: 0; font-weight: 400; font-size: 24px; line-height: 24px; font-weight: 400; text-transform: uppercase; letter-spacing: 1px;}
+h3{margin: 0; font-weight: 400; font-size: 24px; line-height: 30px;}
+h4{margin: 0; font-weight: 400;}
+h5{margin: 0; font-weight: 400;}
+h6{margin: 0; font-weight: 400;}
+ p{margin: 0; font-weight: 400; font-size: 16px; line-height: 22px;}
+li{margin: 0; font-weight: 400; font-size: 16px; line-height: 22px;}
+
+nav{width: 750px; height: 340px; margin: 50px auto 0 auto; position: relative;}
+nav div{width: 750px; height: 340px; position: absolute; top: 0; left: 0;}
+  nav div h2{z-index: 100; position: absolute; color: #ffffff;}
+  nav div h2:hover{cursor: pointer;}
+  nav div #homeh2{top: 60px; left: 113px;}
+  nav div #abouth2{top: 245px; left: 205px;}
+  nav div #worksh2{top: 130px; left: 383px;}
+  nav div #connecth2{top: 160px; left: 593px;}
+
+nav svg{width: 750px; height: 340px; position: absolute; top: 0; left: 0;}
+  nav svg polygon{transition: ease-in-out .2s;}
+  nav svg polygon:hover{cursor: pointer;}
+
+footer{height: 200px; background-color: #000000; margin: 25px -50px 0 -50px;}
+
+.container{display: flex;}
+.table{display: table;}
+.table-cell{display: table-cell; vertical-align: middle}
+
+
+/* HOME */
+@font-face {font-family: 'font1'; src: url('../fonts/BebasNeue.ttf');}
+@font-face {font-family: 'font2'; src: url('../fonts/Notera.ttf');}
+@font-face {font-family: 'font3'; src: url('../fonts/ChalkDash.ttf');}
+@font-face {font-family: 'font4'; src: url('../fonts/BorgensBurlesque.ttf');}
+@font-face {font-family: 'font5'; src: url('../fonts/Silkscreen.ttf');}
+
+#home{}
+  #home #typeBlock{margin: 50px auto 0 auto; width: fit-content;}
+    #home #typeBlock h1{display: inline; line-height: 75px;}
+      #home #typeBlock h1 #font1{font-family: 'font1'; font-size: 100px;}
+      #home #typeBlock h1 #font2{font-family: 'font2'; font-size: 100px;}
+      #home #typeBlock h1 #font3{font-family: 'font3'; font-size: 50px;}
+      #home #typeBlock h1 #font4{font-family: 'font4'; font-size: 100px; text-transform: uppercase;}
+      #home #typeBlock h1 #font5{font-family: 'font5'; font-size: 75px; text-transform: uppercase;}
+
+  #home #typeBlock .typed-cursor{font-family: 'font1'; font-size: 100px; line-height: 100px; animation-iteration-count: infinite !important; opacity: 1; -webkit-animation: blink 0.7s infinite; -moz-animation: blink 0.7s infinite; animation: blink 0.7s infinite;}
+    @keyframes blink{0%  {opacity: 1;} 50% {opacity: 0;} 100%{opacity: 1;}}
+    @-webkit-keyframes blink{0%  {opacity: 1;} 50% {opacity: 0;} 100%{opacity: 1;}}
+    @-moz-keyframes blink{0%  {opacity: 1;} 50% {opacity: 0;} 100%{opacity: 1;}}
+
+  #home h3{text-align: center; margin-top: 25px;}
+
+
+/* ABOUT */
+#about{padding: 50px 50px 0 50px;}
+  #about h3{color: rgb(252,201,48);}
+  #about div p a{color: #000000; text-decoration: none; border-bottom: 2px dotted rgb(252,201,48);}
+
+  #about nav{margin: 25px auto 0 auto;}
+
+
+/* WORK */
+#work{padding: 50px 50px 0 50px;}
+  #work h3{color: rgb(237,102,122);}
+  #work nav{margin: 25px auto 0 auto;}
+
+
+/* CONTACT */
+#contact{padding: 50px 50px 0 50px;}
+  #contact h3{color: rgb(28,174,214);}
+  #contact p a{color: #000000; text-decoration: none; border-bottom: 2px dotted rgb(28,174,214);}
+  #contact #icons{margin-top: 10px;}
+    #contact #icons i{font-size: 20px; color: rgb(28,174,214); transition: ease-in-out .2s;}
+    #contact #icons i:not(:last-child){margin-right: 5px;}
+    #contact #icons i:hover{cursor: pointer; opacity: .75;}
+
+  #contact nav{margin: 25px auto 0 auto;}
+
+
+
+
+
+/*godfuckingdamnitatom*/
