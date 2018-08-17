@@ -17,6 +17,17 @@ $(document).ready(function(){
 	$('h2').mouseout(function(){
 		$('polygon').removeAttr('filter');
 	});
+
+	// Works
+	$('.main-carousel').flickity({
+		cellAlign: 'left',
+		contain: true,
+		wrapAround: true,
+		freeScroll: true,
+		pageDots: false,
+		prevNextButtons: false,
+		autoPlay: 2000
+	});
 });
 
 /* Home Type Animation */
