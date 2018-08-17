@@ -7,7 +7,7 @@ var enemies,rock1,wall1,wall2,wallS;
 var crash;
 
 function ready(){
-	document.getElementById('opening').click()
+	document.getElementById('opening').click();
 	document.getElementById('opening').play();
 }
 
