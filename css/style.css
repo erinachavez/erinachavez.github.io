@@ -3,7 +3,7 @@ body{margin: 0; font-family: Helvetica, sans-serif;}
 h1{margin: 0; font-weight: 400; font-size: 75px; line-height: 75px;}
 h2{margin: 0; font-weight: 400; font-size: 24px; line-height: 24px; font-weight: 400; text-transform: uppercase; letter-spacing: 1px;}
 h3{margin: 0; font-weight: 400; font-size: 24px; line-height: 30px;}
-h4{margin: 0; font-weight: 400;}
+h4{margin: 0; font-weight: 200; font-size: 18px; line-height: 24px; text-transform: uppercase;}
 h5{margin: 0; font-weight: 400;}
 h6{margin: 0; font-weight: 400;}
  p{margin: 0; font-weight: 400; font-size: 16px; line-height: 22px;}
@@ -93,7 +93,23 @@ footer{height: 200px; background-color: #000000; margin: 25px -50px 0 -50px;}
   #contact nav{margin: 25px auto 0 auto;}
 
 
+/* RESUME */
+#resume{padding: 50px 50px 0 50px;}
+  #resume p{line-height: 28px;}
+  #resume .container{justify-content: space-between;}
 
+    #resume #main .container i{font-size: 28px; transition: ease-in-out .2s;}
+    #resume #main .container i:hover{opacity: .5; cursor: pointer;}
+
+    #resume #main .container p:first-child{font-weight: 600;}
+      #resume #main .container p span{font-style: italic;}
+
+    #resume #main ul{margin: 0 0 10px 0;}
+      #resume #main ul li{list-style: none;}
+
+    #resume #main #skills{text-align: center; width: 850px; margin: 0 auto;}
+
+  #resume nav{margin: 25px auto 0 auto;}
 
 
 /*godfuckingdamnitatom*/
