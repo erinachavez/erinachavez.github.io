@@ -68,15 +68,27 @@ footer{height: 200px; background-color: #000000; margin: 25px -50px 0 -50px;}
 #work{padding: 50px 50px 0 50px;}
   #work h3{color: rgb(237,102,122);}
 
-  #work .main-carousel .carousel-cell{width: 250px; height: 150px; border-right: 10px solid #fff;}
-  #work .main-carousel #iqawc{background-image: url('../images/iqawc.png'); background-size: cover; background-position: top center;}
-  #work .main-carousel #jedi_journey{background-image: url('../images/jedi-journey.png'); background-size: cover; background-position: top center;}
-  #work .main-carousel #prints{background-image: url('../images/print.jpg'); background-size: cover; background-position: top center;}
-  #work .main-carousel #bab{background-image: url('../images/bab.png'); background-size: cover; background-position: top left;}
-  #work .main-carousel #quidditch{background-image: url('../images/flag.png'); background-size: cover; background-position: top center;}
-  #work .main-carousel #systems{background-image: url('../images/systems.png'); background-size: cover; background-position: top center;}
-  #work .main-carousel #miscellaneous{background-image: url('../images/lacuna.jpg'); background-size: cover; background-position: top center;}
-  #work .main-carousel #bmfa{background-image: url('../images/bmfa.png'); background-size: cover; background-position: center center;}
+  #work #main{position: relative;}
+    #work #main #alert{position: absolute; text-align: center; z-index: 100; width: 100%; top: 0; transition: ease-in-out .5s; opacity: 0;}
+
+    #work #main .main-carousel .carousel-cell{width: 250px; height: 150px; border-right: 10px solid #fff; position: relative;}
+      #work #main .main-carousel .carousel-cell div{width: 100%; height: 100%; position: absolute; top: 0; left: 0;}
+
+      #work #main .main-carousel .carousel-cell .filter{width: 200px; height: 100%; opacity: 0; transition: ease-in-out .2s; z-index: 100; display: table; padding: 0 25px;}
+      #work #main .main-carousel .carousel-cell:hover .filter{background-color: rgba(237,102,122,0.5); cursor: pointer; opacity: 1;}
+        #work #main .main-carousel .carousel-cell .filter p{display: table-cell; color: #fff; text-align: center; font-size: 20px; vertical-align: middle;}
+
+      #work #main .main-carousel .carousel-cell .image{transition: ease-in-out .2s;}
+      #work #main .main-carousel .carousel-cell #iqawc{background-image: url('../images/iqawc.png'); background-size: cover; background-position: top center;}
+      #work #main .main-carousel .carousel-cell #jedi_journey{background-image: url('../images/jedi-journey.png'); background-size: cover; background-position: top center;}
+      #work #main .main-carousel .carousel-cell #prints{background-image: url('../images/print.jpg'); background-size: cover; background-position: top center;}
+      #work #main .main-carousel .carousel-cell #bab{background-image: url('../images/bab.png'); background-size: cover; background-position: top left;}
+      #work #main .main-carousel .carousel-cell #quidditch{background-image: url('../images/flag.png'); background-size: cover; background-position: top center;}
+      #work #main .main-carousel .carousel-cell #pixel{background-image: url('../images/pixel.png'); background-size: cover; background-position: top center;}
+      #work #main .main-carousel .carousel-cell #systems{background-image: url('../images/systems.png'); background-size: cover; background-position: top center;}
+      #work #main .main-carousel .carousel-cell #miscellaneous{background-image: url('../images/lacuna.jpg'); background-size: cover; background-position: top center;}
+      #work #main .main-carousel .carousel-cell #bmfa{background-image: url('../images/bmfa.png'); background-size: cover; background-position: center center;}
+      #work #main .main-carousel .carousel-cell:hover .image{opacity: .25;}
 
   #work nav{margin: 25px auto 0 auto;}
 
@@ -94,11 +106,13 @@ footer{height: 200px; background-color: #000000; margin: 25px -50px 0 -50px;}
 
 
 /* RESUME */
-#resume{padding: 50px 50px 0 50px;}
+#resume{padding: 50px 100px 0 100px;}
   #resume p{line-height: 28px;}
   #resume .container{justify-content: space-between;}
 
-    #resume #main .container i{font-size: 28px; transition: ease-in-out .2s;}
+  #resume #main{padding: 0 0 50px 0;}
+    #resume #main .container h3{margin: 0 0 0 -50px;}
+    #resume #main .container i{font-size: 28px; transition: ease-in-out .2s; margin: 0 -50px 0 0;}
     #resume #main .container i:hover{opacity: .5; cursor: pointer;}
 
     #resume #main .container p:first-child{font-weight: 600;}
@@ -110,6 +124,8 @@ footer{height: 200px; background-color: #000000; margin: 25px -50px 0 -50px;}
     #resume #main #skills{text-align: center; width: 850px; margin: 0 auto;}
 
   #resume nav{margin: 25px auto 0 auto;}
+
+  #resume footer{margin: 0 -100px;}
 
 
 /*godfuckingdamnitatom*/

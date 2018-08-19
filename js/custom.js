@@ -28,6 +28,14 @@ $(document).ready(function(){
 		prevNextButtons: false,
 		autoPlay: 2000
 	});
+
+	$('.main-carousel').mouseover(function(){
+		$('#alert').css('opacity','1');
+	});
+
+	$('.main-carousel').mouseleave(function(){
+		$('#alert').css('opacity','0');
+	});
 });
 
 /* Home Type Animation */
