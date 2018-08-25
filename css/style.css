@@ -25,7 +25,23 @@ nav svg{width: 750px; height: 340px; position: absolute; top: 0; left: 0;}
   nav svg polygon{transition: ease-in-out .2s;}
   nav svg polygon:hover{cursor: pointer;}
 
-footer{height: 200px; background-color: #000000; margin: 25px -50px 0 -50px;}
+footer{background-color: #000000; margin: 25px 0 0 0; color: #fff; padding: 25px 100px; justify-content: space-between;}
+  footer .container{}
+    footer .container #footer1 h4{line-height: 18px; height: 18px;}
+    footer .container #footer1 h4:first-child{margin-bottom: 5px;}
+
+    footer .container #footer2{border-left: 1px solid #fff; margin-left: 30px; padding-left: 15px;}
+      footer .container #footer2 p{font-weight: 200; font-size: 12px; line-height: 12px; text-transform: uppercase;}
+      footer .container #footer2 p:not(:last-child){margin-bottom: 10px;}
+        footer .container #footer2 p a{color: #fff; text-decoration: none;}
+
+    footer #footer3{position: relative;}
+      footer #footer3 #position{position: absolute; bottom: 0; right: 0; width: 112px;}
+        footer #footer3 #position .container{justify-content: flex-end; margin: 0 0 10px 0;}
+          footer #footer3 #position .container i{font-size: 20px; color: #fff; transition: ease-in-out .2s;}
+          footer #footer3 #position .container i:not(:last-child){margin-right: 5px;}
+          footer #footer3 #position .container i:hover{cursor: pointer; opacity: .75;}
+        footer #footer3 #position p{font-weight: 200; font-size: 12px; line-height: 12px; text-align: right;}
 
 .container{display: flex;}
 .table{display: table;}
@@ -57,18 +73,17 @@ footer{height: 200px; background-color: #000000; margin: 25px -50px 0 -50px;}
 
 
 /* ABOUT */
-#about{padding: 50px 50px 0 50px;}
-  #about h3{color: rgb(252,201,48);}
-  #about div p a{color: #000000; text-decoration: none; border-bottom: 2px dotted rgb(252,201,48);}
-
-  #about nav{margin: 25px auto 0 auto;}
+#about{padding: 50px 0 0 0;}
+  #about #main{padding: 0 50px;}
+  #about #main div h3{color: rgb(252,201,48);}
+  #about #main div p a{color: #000000; text-decoration: none; border-bottom: 2px dotted rgb(252,201,48);}
+  #about #main nav{margin: 25px auto 0 auto;}
 
 
 /* WORK */
-#work{padding: 50px 50px 0 50px;}
-  #work h3{color: rgb(237,102,122);}
-
-  #work #main{position: relative;}
+#work{padding: 50px 0 0 0;}
+  #work #main{position: relative; padding: 0 50px;}
+    #work #main h3{color: rgb(237,102,122);}
     #work #main #alert{position: absolute; text-align: center; z-index: 100; width: 100%; top: 0; transition: ease-in-out .5s; opacity: 0;}
 
     #work #main .main-carousel .carousel-cell{width: 250px; height: 150px; border-right: 10px solid #fff; position: relative;}
@@ -90,27 +105,28 @@ footer{height: 200px; background-color: #000000; margin: 25px -50px 0 -50px;}
       #work #main .main-carousel .carousel-cell #bmfa{background-image: url('../images/bmfa.png'); background-size: cover; background-position: center center;}
       #work #main .main-carousel .carousel-cell:hover .image{opacity: .25;}
 
-  #work nav{margin: 25px auto 0 auto;}
-
+    #work #main nav{margin: 25px auto 0 auto;}
 
 /* CONTACT */
-#contact{padding: 50px 50px 0 50px;}
-  #contact h3{color: rgb(28,174,214);}
-  #contact p a{color: #000000; text-decoration: none; border-bottom: 2px dotted rgb(28,174,214);}
-  #contact #icons{margin-top: 10px;}
-    #contact #icons i{font-size: 20px; color: rgb(28,174,214); transition: ease-in-out .2s;}
-    #contact #icons i:not(:last-child){margin-right: 5px;}
-    #contact #icons i:hover{cursor: pointer; opacity: .75;}
+#contact{padding: 50px 0 0 0;}
+  #contact #main{padding: 0 50px;}
+    #contact #main h3{color: rgb(28,174,214);}
+    #contact #main p a{color: #000000; text-decoration: none; border-bottom: 2px dotted rgb(28,174,214);}
+    #contact #main #icons{margin-top: 10px;}
+      #contact #main #icons i{font-size: 20px; color: rgb(28,174,214); transition: ease-in-out .2s;}
+      #contact #main #icons i:not(:last-child){margin-right: 5px;}
+      #contact #main #icons i:hover{cursor: pointer; opacity: .75;}
 
-  #contact nav{margin: 25px auto 0 auto;}
+    #contact #main nav{margin: 25px auto 0 auto;}
 
 
 /* RESUME */
-#resume{padding: 50px 100px 0 100px;}
+#resume{padding: 50px 0 0 0;}
   #resume p{line-height: 28px;}
+  #resume a{color: #000000; text-decoration: none; border-bottom: 2px dotted #000;}
   #resume .container{justify-content: space-between;}
 
-  #resume #main{padding: 0 0 50px 0;}
+  #resume #main{padding: 0 100px 25px 100px;}
     #resume #main .container h3{margin: 0 0 0 -50px;}
     #resume #main .container i{font-size: 28px; transition: ease-in-out .2s; margin: 0 -50px 0 0;}
     #resume #main .container i:hover{opacity: .5; cursor: pointer;}
@@ -118,14 +134,12 @@ footer{height: 200px; background-color: #000000; margin: 25px -50px 0 -50px;}
     #resume #main .container p:first-child{font-weight: 600;}
       #resume #main .container p span{font-style: italic;}
 
-    #resume #main ul{margin: 0 0 10px 0;}
+    #resume #main ul{margin: 0 0 20px 0;}
       #resume #main ul li{list-style: none;}
 
     #resume #main #skills{text-align: center; width: 850px; margin: 0 auto;}
 
   #resume nav{margin: 25px auto 0 auto;}
-
-  #resume footer{margin: 0 -100px;}
 
 
 /*godfuckingdamnitatom*/
