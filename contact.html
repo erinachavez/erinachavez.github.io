@@ -12,45 +12,47 @@
 	</head>
 
 	<body id='contact'>
-		<div id='main'>
-			<div style='height:210px;'>
-				<h3>CONNECT</h3>
-				<p>
-					<br>
-					<a href='mailto:chavez.erina@gmail.com'>chavez.erina@gmail.com</a>
-				</p>
-				<p>Brooklyn, NY</p>
-				<div id='icons' class='container'>
-					<i class='fab fa-github' onclick="window.open('https://github.com/erinachavez');"></i>
-					<i class='fab fa-linkedin' onclick="window.open('https://www.linkedin.com/in/erina-chavez/');"></i>
-					<i class='fab fa-twitter' onclick="window.open('https://twitter.com/erinachavez');"></i>
-					<i class='fab fa-instagram' onclick="window.open('https://www.instagram.com/aireenuh/');"></i>
+		<div id='spacer'>
+			<div id='main-content'>
+				<div style='height:210px;'>
+					<h3>CONNECT</h3>
+					<p>
+						<br>
+						<a href='mailto:chavez.erina@gmail.com'>chavez.erina@gmail.com</a>
+					</p>
+					<p>Brooklyn, NY</p>
+					<div id='icons' class='container'>
+						<i class='fab fa-github' onclick="window.open('https://github.com/erinachavez');"></i>
+						<i class='fab fa-linkedin' onclick="window.open('https://www.linkedin.com/in/erina-chavez/');"></i>
+						<i class='fab fa-twitter' onclick="window.open('https://twitter.com/erinachavez');"></i>
+						<i class='fab fa-instagram' onclick="window.open('https://www.instagram.com/aireenuh/');"></i>
+					</div>
 				</div>
+
+				<nav>
+					<div>
+						<h2 id='homeh2'>Home</h2>
+						<h2 id='abouth2'>About</h2>
+						<h2 id='worksh2'>Works</h2>
+						<h2 id='connecth2'>Connect</h2>
+					</div>
+					<svg>
+						<defs>
+							<filter id='f1' x='-25' y='-25' width='300' height='450'>
+								<feOffset result='offOut' in='SourceGraphic' dx='0' dy='0' />
+								<feColorMatrix result = 'matrixOut' in = 'offOut' type = 'matrix' values = '0.2 0 0 0 0 0 0.2 0 0 0 0 0 0.2 0 0 0 0 0 1 0'/>
+								<feGaussianBlur result='blurOut' in='matrixOut' stdDeviation='10' />
+								<feBlend in='SourceGraphic' in2='blurOut' mode='normal' />
+							</filter>
+						</defs>
+
+						<polygon class='homeh2' onclick="location.href='index.html'" points='63.75 18.75 206.25 48.75 168.75 318.75 112.5 281.25 93.75 311.25 18.75 281.25 48.75 168.75 18.75 135 60 75' stroke='rgb(156,199,64)' fill='rgb(156,199,64)' stroke-width='1'/>
+						<polygon class='abouth2' onclick="location.href='about.html'" points='225 26.25 187.5 281.25 243.75 281.25 262.5 318.75 375 262.5 375 206.25 348.75 131.25 412.5 56.25 337.5 63.75 356.25 18.75' stroke='rgb(252,201,48)' fill='rgb(252,201,48)' stroke-width='1'/>
+						<polygon class='worksh2' onclick="location.href='work.html'" points='363.75 135 458.25 18.75 555 37.5 525 131.25 555 206.25 525 243.75 555 318.75 389.25 300 390 206.25' stroke='rgb(237,102,122)' fill='rgb(237,102,122)' stroke-width='1'/>
+						<polygon class='connecth2' onclick="location.href='contact.html'" points='543.75 131.25 573.75 206.25 543.75 243.75 573.75 318.75 712.5 281.25 693.75 198.75 731.25 187.5 731.25 56.25 675 75 675 18.75 630 45 573.75 37.5' stroke='rgb(28,174,214)' fill='rgb(28,174,214)' stroke-width='1'/>
+					</svg>
+				</nav>
 			</div>
-
-			<nav>
-				<div>
-					<h2 id='homeh2'>Home</h2>
-					<h2 id='abouth2'>About</h2>
-					<h2 id='worksh2'>Works</h2>
-					<h2 id='connecth2'>Connect</h2>
-				</div>
-				<svg>
-					<defs>
-						<filter id='f1' x='-25' y='-25' width='300' height='450'>
-							<feOffset result='offOut' in='SourceGraphic' dx='0' dy='0' />
-							<feColorMatrix result = 'matrixOut' in = 'offOut' type = 'matrix' values = '0.2 0 0 0 0 0 0.2 0 0 0 0 0 0.2 0 0 0 0 0 1 0'/>
-							<feGaussianBlur result='blurOut' in='matrixOut' stdDeviation='10' />
-							<feBlend in='SourceGraphic' in2='blurOut' mode='normal' />
-						</filter>
-					</defs>
-
-					<polygon class='homeh2' onclick="location.href='index.html'" points='63.75 18.75 206.25 48.75 168.75 318.75 112.5 281.25 93.75 311.25 18.75 281.25 48.75 168.75 18.75 135 60 75' stroke='rgb(156,199,64)' fill='rgb(156,199,64)' stroke-width='1'/>
-					<polygon class='abouth2' onclick="location.href='about.html'" points='225 26.25 187.5 281.25 243.75 281.25 262.5 318.75 375 262.5 375 206.25 348.75 131.25 412.5 56.25 337.5 63.75 356.25 18.75' stroke='rgb(252,201,48)' fill='rgb(252,201,48)' stroke-width='1'/>
-					<polygon class='worksh2' onclick="location.href='work.html'" points='363.75 135 458.25 18.75 555 37.5 525 131.25 555 206.25 525 243.75 555 318.75 389.25 300 390 206.25' stroke='rgb(237,102,122)' fill='rgb(237,102,122)' stroke-width='1'/>
-					<polygon class='connecth2' onclick="location.href='contact.html'" points='543.75 131.25 573.75 206.25 543.75 243.75 573.75 318.75 712.5 281.25 693.75 198.75 731.25 187.5 731.25 56.25 675 75 675 18.75 630 45 573.75 37.5' stroke='rgb(28,174,214)' fill='rgb(28,174,214)' stroke-width='1'/>
-				</svg>
-			</nav>
 		</div>
 
 		<footer class='container'>
