@@ -12,7 +12,7 @@ function ready(){
 }
 
 function videoEnd(){
-	$('#vidContainer').html('');
+	$('#vidContainer').remove();
 }
 
 function lightsaber(choice){ // Change cursor with lightsaber choice

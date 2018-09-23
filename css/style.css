@@ -75,15 +75,15 @@ footer{background-color: #000000; margin: 25px 0 0 0; color: #fff; padding: 25px
 
 
 /* ABOUT */
-#about #main-content{padding: 0 50px;}
+#about #main-content{padding: 0 75px;}
   #about #main-content div h3{color: rgb(252,201,48);}
   #about #main-content div p a{color: #000000; text-decoration: none; border-bottom: 2px dotted rgb(252,201,48);}
 
 
 /* WORK */
-#work #main-content{position: relative; padding: 0 50px;}
-  #work #main-content h3{color: rgb(237,102,122);}
-  #work #main-content #alert{position: absolute; text-align: center; z-index: 100; width: 100%; top: 50px; transition: ease-in-out .5s; opacity: 0;}
+#work #main-content{padding: 0 75px;}
+  #work #main-content div h3{color: rgb(237,102,122);}
+  #work #main-content div #alert{position: absolute; text-align: center; z-index: 100; transition: ease-in-out .5s; opacity: 0; width: 100%; margin-top: -45px;}
 
   #work #main-content .main-carousel .carousel-cell{width: 250px; height: 150px; border-right: 10px solid #fff; position: relative;}
     #work #main-content .main-carousel .carousel-cell div{width: 100%; height: 100%; position: absolute; top: 0; left: 0;}
@@ -106,7 +106,7 @@ footer{background-color: #000000; margin: 25px 0 0 0; color: #fff; padding: 25px
     #work #main-content .main-carousel .carousel-cell:hover .image{opacity: .25;}
 
 /* CONTACT */
-#contact #main-content{padding: 0 50px;}
+#contact #main-content{padding: 0 75px;}
   #contact #main-content h3{color: rgb(28,174,214);}
   #contact #main-content p a{color: #000000; text-decoration: none; border-bottom: 2px dotted rgb(28,174,214);}
   #contact #main-content #icons{margin-top: 10px;}
