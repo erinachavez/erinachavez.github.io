@@ -39,7 +39,7 @@ footer{background-color: #000000; margin: 25px 0 0 0; color: #fff; padding: 25px
         footer .container #footer2 p a{color: #fff; text-decoration: none;}
 
     footer #footer3{position: relative;}
-      footer #footer3 #position{position: absolute; bottom: 0; right: 0; width: 112px;}
+      footer #footer3 #position{position: absolute; bottom: 0; right: 0; width: 150px;}
         footer #footer3 #position .container{justify-content: flex-end; margin: 0 0 10px 0;}
           footer #footer3 #position .container i{font-size: 20px; color: #fff; transition: ease-in-out .2s;}
           footer #footer3 #position .container i:not(:last-child){margin-right: 5px;}
@@ -95,6 +95,7 @@ footer{background-color: #000000; margin: 25px 0 0 0; color: #fff; padding: 25px
     #work #main-content .main-carousel .carousel-cell .image{transition: ease-in-out .2s;}
     #work #main-content .main-carousel .carousel-cell #iqawc{background-image: url('../images/iqawc.png'); background-size: cover; background-position: top center;}
     #work #main-content .main-carousel .carousel-cell #jedi_journey{background-image: url('../images/jedi-journey.png'); background-size: cover; background-position: top center;}
+    #work #main-content .main-carousel .carousel-cell #lightsaber_training{background-image: url('../images/lightsaber-training.png'); background-size: cover; background-position: top center;}
     #work #main-content .main-carousel .carousel-cell #prints{background-image: url('../images/print.jpg'); background-size: cover; background-position: top center;}
     #work #main-content .main-carousel .carousel-cell #bab{background-image: url('../images/bab.png'); background-size: cover; background-position: top left;}
     #work #main-content .main-carousel .carousel-cell #quidditch{background-image: url('../images/flag.png'); background-size: cover; background-position: top center;}
@@ -133,6 +134,33 @@ footer{background-color: #000000; margin: 25px 0 0 0; color: #fff; padding: 25px
       #resume #main ul li{list-style: none;}
 
     #resume #main #skills{text-align: center; width: 850px; margin: 0 auto;}
+
+
+/* PRINTMAKING */
+#printmaking #main-content{padding: 0 75px;}
+  #printmaking #main-content h3{margin-top: 50px;}
+
+  #printmaking #main-content #gallery{width: 100%;}
+    #printmaking #main-content #gallery .col{width: 33%;}
+    #printmaking #main-content #gallery .col:first-child{padding: 0 15px 0 0;}
+    #printmaking #main-content #gallery .col:nth-child(2){padding: 0 15px;}
+    #printmaking #main-content #gallery .col:last-child{padding: 0 0 0 15px;}
+      #printmaking #main-content #gallery .col img{width: 100%; margin-bottom: 30px; transition: ease-in-out .2s;}
+      #printmaking #main-content #gallery .col img:hover{opacity: .75; cursor: pointer;}
+
+
+/* GRAPHIC DESIGN */
+#graphic-design #main-content{padding: 0 75px;}
+  #graphic-design #main-content h3{margin-top: 50px;}
+
+  #graphic-design #main-content #gallery{width: 100%;}
+    #graphic-design #main-content #gallery .col{width: 33%;}
+    #graphic-design #main-content #gallery .col:first-child{padding: 0 15px 0 0;}
+    #graphic-design #main-content #gallery .col:nth-child(2){padding: 0 15px;}
+    #graphic-design #main-content #gallery .col:last-child{padding: 0 0 0 15px;}
+      #graphic-design #main-content #gallery .col img{width: 100%; margin-bottom: 30px; transition: ease-in-out .2s;}
+      #graphic-design #main-content #gallery .col img:hover{opacity: .75; cursor: pointer;}
+
 
 
 /*godfuckingdamnitatom*/
