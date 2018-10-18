@@ -33,6 +33,7 @@
 					$('h1,h3').css('color','#000000');
 				}
 			}
+
 			function calcGridSize(){
 				$('#form1').css('display','none');
 
@@ -73,11 +74,11 @@
 				<h2>Square Size</h2>
 				<p>(Dimensions of Pixel)</p>
 			</label>
-			<input id='squareDim' name='squareDim' type='number' min=8 max=50 required>
+			<input id='squareDim' name='squareDim' type='number' min='8' max='50' required>
 			<button type='submit'>Next</button>
 		</form>
 
-		<form id='form2' action='hw5_3.php' method='POST'>
+		<form id='form2' action='game.html' method='POST'>
 			<input id='squareDimHidden' name='squareDim'>
 			<label>
 				<h2>Grid Size</h2>

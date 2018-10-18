@@ -118,7 +118,7 @@ function paletteReset(){
 		'#btn17':'#a64b0f',
 		'#btn18':'#ffffff'
 	};
-	
+
 	for (var key in defaultPalette){
 		$(key).val(defaultPalette[key]);
 		$(key).css('background-color',defaultPalette[key]);
