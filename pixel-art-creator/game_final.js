@@ -5,9 +5,9 @@ var shiftY,shiftX,mGridX,mGridY;
 var hex,showGrid,hideGrid;
 var wWidth,wHeight;
 
-function homeSetup(windowWidth){
-	wWidth = windowWidth-90;
-	wHeight = windowHeight;
+function homeSetup(){
+	wWidth = window.innerWidth-90;
+	wHeight = window.innerHeight;
 
 	var r1 = int(random(255));
 	var g1 = int(random(255));
