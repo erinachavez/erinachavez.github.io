@@ -6,21 +6,17 @@ var hex,showGrid,hideGrid;
 var wWidth,wHeight;
 
 function homeSetup(){
-	wWidth = window.innerWidth;
-	wWidth -= 90;
+	wWidth = window.innerWidth - 90;
 	wHeight = window.innerHeight;
 
-	console.log(wWidth);
-	console.log(wHeight);
-
-	var r1 = int(random(255));
-	var g1 = int(random(255));
-	var b1 = int(random(255));
+	var r1 = parseInt(random(255));
+	var g1 = parseInt(random(255));
+	var b1 = parseInt(random(255));
 	var bg1 = 'rgb(' + r1 + ',' + g1 + ',' + b1 + ')';
 
-	var r2 = int(random(255));
-	var g2 = int(random(255));
-	var b2 = int(random(255));
+	var r2 = parseInt(random(255));
+	var g2 = parseInt(random(255));
+	var b2 = parseInt(random(255));
 	var bg2 = 'rgb(' + r2 + ',' + g2 + ',' + b2 + ')';
 
 	$('body').css('background','linear-gradient(to bottom right,' + bg1 + ',' + bg2 + ')');
