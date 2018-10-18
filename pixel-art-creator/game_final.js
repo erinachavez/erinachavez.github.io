@@ -5,7 +5,7 @@ var shiftY,shiftX,mGridX,mGridY;
 var hex,showGrid,hideGrid;
 var wWidth,wHeight;
 
-function homeSetup(){
+function homeSetup(windowWidth){
 	wWidth = windowWidth-90;
 	wHeight = windowHeight;
 
@@ -175,7 +175,7 @@ function paletteReset(){
 function saveImage2(){
 	showGrid = false;
 	hideGrid = true;
-	
+
 	save('myPixelArt.png');
 };
 
