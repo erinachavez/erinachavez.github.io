@@ -6,8 +6,12 @@ var hex,showGrid,hideGrid;
 var wWidth,wHeight;
 
 function homeSetup(){
-	wWidth = window.innerWidth-90;
+	wWidth = window.innerWidth;
+	wWidth -= 90;
 	wHeight = window.innerHeight;
+
+	console.log(wWidth);
+	console.log(wHeight);
 
 	var r1 = int(random(255));
 	var g1 = int(random(255));
