@@ -173,6 +173,9 @@ function paletteReset(){
 
 //Save image tool: Pt. 2
 function saveImage2(){
+	showGrid = false;
+	hideGrid = true;
+	
 	save('myPixelArt.png');
 };
 
