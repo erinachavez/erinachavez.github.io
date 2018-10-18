@@ -144,14 +144,17 @@ function saveImage(){
 	showGrid = false;
 	hideGrid = true;
 
-	saveImage2();
-
-	// $('#saveModal').css('display','block');
+	$('#saveModal').css('display','block');
 };
 
 //Save image tool: Pt. 2
-function saveImage2(){
-	save('myPixelArt.png');
+function saveImage2(form){
+	name = $(form).children('#imageName').val();
+	save(name + '.png');
+
+	$('#saveModal').css('display','none');
+
+	return false;
 };
 
 /* Canvas -------------------------------------------*/

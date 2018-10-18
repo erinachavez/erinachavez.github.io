@@ -59,10 +59,11 @@
 				#tools button:hover span{visibility: visible;}
 
 		#saveModal{display: none; z-index: 9; width: 350px; background-color: #ffffff; padding: 15px; position: fixed; top: 5vw; left: 50%; margin-left: -175px; border: 5px solid #000000;}
-			#saveModal p{margin: 0; text-align: justify;}
-			#saveModal .container{}
-				#saveModal .container button{display: block; background: none; border: solid 3px #000000;}
-				#saveModal .container button:hover{background-color: #000000; color: #ffffff; cursor: pointer;}
+			#saveModal p{margin: 0; text-align: center;}
+			#saveModal form{display: block; margin: 0 auto; width: fit-content;}
+				#saveModal form input{border: solid 3px #000000; margin: 0; line-height: 22px; padding: 0 5px;}
+				#saveModal form button{background: none; border: solid 3px #000000; margin: 0 0 0 10px; line-height: 22px; padding: 0 5px;}
+				#saveModal form button:hover{background-color: #000000; color: #ffffff; cursor: pointer;}
 	</style>
 </head>
 <body>
@@ -162,18 +163,18 @@
 		</button>
 	</div>
 
-	<!-- <div id='saveModal'>
+	<div id='saveModal'>
 		<p>
 			You've made an amazing piece of art!
 			<br><br>
-			Would you like to save a copy for yourself and one to Pixel Art Creator's site?
+			What is the name of your piece?
 		</p>
 		<br>
-		<div class='container'>
-			<button id='databaseSave' onclick='databaseSave()'>Save to Pixel Art Creator</button>
-			<button id='saveImage2' onclick='saveImage2()'>Just save a copy for myself</button>
+		<form onsubmit='return saveImage2(this);' method='POST'>
+			<!-- <button id='databaseSave' onclick='databaseSave()'>Save to Pixel Art Creator</button> -->
+			<input id='imageName' required><button>Save</button>
 		</div>
-	</div> -->
+	</div>
 </body>
 
 <!-- <script>
