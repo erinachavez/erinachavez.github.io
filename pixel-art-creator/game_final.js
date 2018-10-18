@@ -164,12 +164,12 @@ function paletteReset(){
 };
 
 //Save image tool: Pt. 1
-function saveImage(){
-	showGrid = false;
-	hideGrid = true;
-
-	$('#saveModal').css('display','block');
-};
+// function saveImage(){
+// 	showGrid = false;
+// 	hideGrid = true;
+//
+// 	$('#saveModal').css('display','block');
+// };
 
 //Save image tool: Pt. 2
 function saveImage2(){
