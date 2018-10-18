@@ -3,13 +3,47 @@ var cnv,gridX,gridY,posX,posY;
 var gridLength,squareSize,gridSize,brushSize,brushDim;
 var shiftY,shiftX,mGridX,mGridY;
 var hex,showGrid,hideGrid;
+var wWidth,wHeight;
 
-function calculateGrid(squareDim,gridDim){
-	squareSize = squareDim;
-	gridLength = gridDim;
+function homeSetup(){
+	wWidth = windowWidth-90;
+	wHeight = windowHeight;
 
-	console.log(squareSize);
-	console.log(gridLength);
+	var r1 = int(random(255));
+	var g1 = int(random(255));
+	var b1 = int(random(255));
+	var bg1 = 'rgb(' + r1 + ',' + g1 + ',' + b1 + ')';
+
+	var r2 = int(random(255));
+	var g2 = int(random(255));
+	var b2 = int(random(255));
+	var bg2 = 'rgb(' + r2 + ',' + g2 + ',' + b2 + ')';
+
+	$('body').css('background','linear-gradient(to bottom right,' + bg1 + ',' + bg2 + ')');
+
+	if (r1 < 127 || g1 < 127 || b1 < 127){
+		$('h1,h3').css('color','#ffffff');
+	};
+	if (r1 > 200 || g1 > 200 || b1 > 200){
+		$('h1,h3').css('color','#000000');
+	}
+}
+
+function calcGridSize(){
+	$('#form1').css('display','none');
+
+	var squareDim = $('#squareDim').val();
+
+	if (wWidth < wHeight){
+		var maxGridDim = int((wWidth)/squareDim);
+	}
+	else if (wHeight < wWidth){
+		var maxGridDim = int(wHeight/squareDim);
+	};
+
+	$('#form2').css('display','block');
+	$('#squareDimHidden').val(squareDim);
+	$('#gridDim').attr('max',maxGridDim);
 }
 
 /* Tool and Palette Functions -----------------------*/
@@ -144,6 +178,16 @@ function saveImage2(){
 
 /* Canvas -------------------------------------------*/
 function setup(){
+  var vars = {};
+  var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
+      vars[key] = value;
+  });
+
+	squareDim = vars['squareDim'];
+	gridDim = vars['gridDim'];
+	squareSize = squareDim;
+	gridLength = gridDim;
+
 	brushDim = 0;
 
 	gridSize = gridLength*squareSize + 1;

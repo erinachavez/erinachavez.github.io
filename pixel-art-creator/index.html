@@ -6,50 +6,12 @@
 		<script src='../p5/addons/p5.dom.min.js'></script>
 		<script src='../p5/addons/p5.sound.min.js'></script>
 		<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+		<script src='game_final.js'></script>
 
 		<script>
-			var wWidth,wHeight;
-
-			function setup(){
-				wWidth = windowWidth-90;
-				wHeight = windowHeight;
-
-				var r1 = int(random(255));
-				var g1 = int(random(255));
-				var b1 = int(random(255));
-				var bg1 = 'rgb(' + r1 + ',' + g1 + ',' + b1 + ')';
-
-				var r2 = int(random(255));
-				var g2 = int(random(255));
-				var b2 = int(random(255));
-				var bg2 = 'rgb(' + r2 + ',' + g2 + ',' + b2 + ')';
-
-				$('body').css('background','linear-gradient(to bottom right,' + bg1 + ',' + bg2 + ')');
-
-				if (r1 < 127 || g1 < 127 || b1 < 127){
-					$('h1,h3').css('color','#ffffff');
-				};
-				if (r1 > 200 || g1 > 200 || b1 > 200){
-					$('h1,h3').css('color','#000000');
-				}
-			}
-
-			function calcGridSize(){
-				$('#form1').css('display','none');
-
-				var squareDim = $('#squareDim').val();
-
-				if (wWidth < wHeight){
-					var maxGridDim = int((wWidth)/squareDim);
-				}
-				else if (wHeight < wWidth){
-					var maxGridDim = int(wHeight/squareDim);
-				};
-
-				$('#form2').css('display','block');
-				$('#squareDimHidden').val(squareDim);
-				$('#gridDim').attr('max',maxGridDim);
-			}
+			$(document).ready(function(){
+				homeSetup();
+			});
 		</script>
 
 		<style>
@@ -78,7 +40,7 @@
 			<button type='submit'>Next</button>
 		</form>
 
-		<form id='form2' action='game.html' method='POST'>
+		<form id='form2' action='game.html' method='GET'>
 			<input id='squareDimHidden' name='squareDim'>
 			<label>
 				<h2>Grid Size</h2>
