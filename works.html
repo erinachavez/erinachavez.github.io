@@ -4,88 +4,149 @@
 		<title>Works</title>
 		<meta name='viewport' content='width=device-width, initial-scale=1.0'>
 
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 		<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
 		<script type='text/javascript' src='js/typed/lib/typed.min.js'></script>
-		<link rel='stylesheet' href='https://unpkg.com/flickity@2/dist/flickity.min.css'>
-		<script src='https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js'></script>
-		<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.2.0/css/all.css' integrity='sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ' crossorigin='anonymous'>
-
-		<link type='text/css' rel='stylesheet' href='css/style.css'>
 		<script type='text/javascript' src='js/custom.js'></script>
+
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.2.0/css/all.css' integrity='sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ' crossorigin='anonymous'>
+		<link type='text/css' rel='stylesheet' href='css/style.css'>
 	</head>
 
-	<body id='work'>
-		<div id='spacer'>
-			<div id='main-content'>
-				<div style='height:210px;position:relative;'>
-					<h3>WORKS</h3>
-					<p><br></p>
-					<div id='alert'><p>Click and drag to scroll. Double click to select.</p></div>
+	<body id='works' class='container'>
+		<div class='main-content row'>
+			<div class='col-md-2'></div>
+			<div class='col-md-8'>
+				<h2 class='text-pink'>WORKS</h2>
+				<br />
+				<p>This is a collection of personal work that spans both technical and artistic endeavors.</p>
+				<br /><br />
 
-					<div class='main-carousel'>
-						<div class='carousel-cell' ondblclick="window.open('http://iqasport.org/world-cup-2018/')">
-							<div class='filter'><p>International Quidditch Association</p></div>
-							<div class='image' id='iqawc'></div>
+				<div id='gallery' class='container'>
+					<div class='row'>
+						<div class='col-md-3'>
+							<div onclick='window.open("images/print-mono-ghost.png")'>
+								<img src='images/print-mono-ghost.png' />
+							</div>
+							<div onclick='window.open("https://github.com/erinachavez/rwet_spring2019/tree/master/assignment4_031219")'>
+								<img src='images/chain-abstractions.png' />
+							</div>
+							<div onclick='window.open("the-jedi-journey/index.html")'>
+								<img src='images/jedi-journey.png' />
+							</div>
+							<div onclick='window.open("lightsaber-training/index.html")'>
+								<img src='images/lightsaber-training.png' />
+							</div>
+							<div onclick='window.open("images/print-intaglio-halftone.png")'>
+								<img src='images/print-intaglio-halftone.png' />
+							</div>
+							<div onclick='window.open("https://github.com/erinachavez/rwet_spring2019/tree/master/assignment3_022619")'>
+								<img src='images/digital-cut-up.png' />
+							</div>
+							<div onclick='window.open("images/print-relief-grapefruit.png")'>
+								<img src='images/print-relief-grapefruit.png' />
+							</div>
+							<div onclick='window.open("http://growwithflowerremedies.com/")'>
+								<img src='images/flower.png' />
+							</div>
+							<div onclick='window.open("images/design16.jpg")'>
+								<img src='images/design16.jpg' />
+							</div>
 						</div>
-
-						<div class='carousel-cell' ondblclick="window.open('the-jedi-journey/index.html')">
-							<div class='filter'><p>The Jedi Journey</p></div>
-							<div class='image' id='jedi_journey'></div>
+						<div class='col-md-3'>
+							<div onclick='window.open("pixel-art-creator/index.html")'>
+								<img src='images/pixel.png' />
+							</div>
+							<div onclick='window.open("images/print-boy-yellow.png")'>
+								<img src='images/print-boy-yellow.png' />
+							</div>
+							<div onclick='window.open("https://github.com/erinachavez/rwet_spring2019/tree/master/final")'>
+								<img src='images/the-london-underground.png' />
+							</div>
+							<div onclick='window.open("images/print-gemini-espresso-pattern-green.png")'>
+								<img src='images/print-gemini-espresso-pattern-green.png' />
+							</div>
+							<div onclick='window.open("images/design18.jpg")'>
+								<img src='images/design18.jpg' />
+							</div>
+							<div onclick='window.open("images/print-noodles.png")'>
+								<img src='images/print-noodles.png' />
+							</div>
+							<div onclick='window.open("https://www.facebook.com/NYUQuidditch/")'>
+								<img src='images/flag.png' />
+							</div>
+							<div onclick='window.open("images/print-mono-freehand.png")'>
+								<img src='images/print-mono-freehand.png' />
+							</div>
 						</div>
-
-						<div class='carousel-cell' ondblclick="window.open('printmaking.html')">
-							<div class='filter'><p>Printmaking</p></div>
-							<div class='image' id='prints'></div>
+						<div class='col-md-3'>
+							<div onclick='window.open("https://editor.p5js.org/erinachavez/sketches/ic6_7Pzqv")'>
+								<img src='images/runner.gif' />
+							</div>
+							<div onclick='window.open("images/print-girl.png")'>
+								<img src='images/print-girl.png' />
+							</div>
+							<div onclick='window.open("images/design13.jpg")'>
+								<img src='images/design13.jpg' />
+							</div>
+							<div onclick='window.open("images/print-gemini-espresso-tiled.jpg")'>
+								<img src='images/print-gemini-espresso-tiled.jpg' />
+							</div>
+							<div onclick='window.open("https://iqasport.org/world-cup-2018/")'>
+								<img src='images/iqawc.png' />
+							</div>
+							<div onclick='window.open("images/print-mono-stacks.png")'>
+								<img src='images/print-mono-stacks.png' />
+							</div>
+							<div onclick='window.open("bmfa-kiosk/index.html")'>
+								<img src='images/bmfa.png' />
+							</div>
+							<div onclick='window.open("images/print-cats.jpg")'>
+								<img src='images/print-cats.jpg' />
+							</div>
+							<div onclick='window.open("images/design2.jpg")'>
+								<img src='images/design2.jpg' />
+							</div>
 						</div>
-
-						<div class='carousel-cell' ondblclick="window.open('pixel-art-creator/index.html')">
-							<div class='filter'><p>Pixel Art Creator</p></div>
-							<div class='image' id='pixel'></div>
-						</div>
-
-						<div class='carousel-cell' ondblclick="window.open('https://bigapplebuddy.com')">
-							<div class='filter'><p>Big Apple Buddy</p></div>
-							<div class='image' id='bab'></div>
-						</div>
-
-						<div class='carousel-cell' ondblclick="window.open('lightsaber-training/index.html')">
-							<div class='filter'><p>Lightsaber Training</p></div>
-							<div class='image' id='lightsaber_training'></div>
-						</div>
-
-						<div class='carousel-cell' ondblclick="window.open('https://erinachavez.github.io/bmfa-kiosk/index.html')">
-							<div class='filter'><p>Botson Museum of Fine Arts Kiosk</p></div>
-							<div class='image' id='bmfa'></div>
-						</div>
-
-						<div class='carousel-cell' ondblclick="window.open('graphic-design.html')">
-							<div class='filter'><p>Miscellenous Graphic Design</p></div>
-							<div class='image' id='miscellaneous'></div>
-						</div>
-
-						<div class='carousel-cell' ondblclick="window.open('http://growwithflowerremedies.com/')">
-							<div class='filter'><p>Grow With Flower Remedies</p></div>
-							<div class='image' id='flower'></div>
-						</div>
-
-						<div class='carousel-cell' ondblclick="window.open('https://www.facebook.com/NYUQuidditch/?ref=bookmarks')">
-							<div class='filter'><p>NYU Quidditch</p></div>
-							<div class='image' id='quidditch'></div>
-						</div>
-
-						<div class='carousel-cell' ondblclick="window.open('https://admin.bigapplebuddy.com')">
-							<div class='filter'><p>Big Apple Buddy: Company Tools</p></div>
-							<div class='image' id='systems'></div>
+						<div class='col-md-3'>
+							<div onclick='window.open("images/design10.jpg")'>
+								<img src='images/design10.jpg' />
+							</div>
+							<div onclick='window.open("https://editor.p5js.org/erinachavez/full/aQm7Wq_CZ")'>
+								<img src='images/pattern-generator.gif' />
+							</div>
+							<div onclick='window.open("images/print-litho-freehand.png")'>
+								<img src='images/print-litho-freehand.png' />
+							</div>
+							<div onclick='window.open("images/design5.jpg")'>
+								<img src='images/design5.jpg' />
+							</div>
+							<div onclick='window.open("images/print-seductive.png")'>
+								<img src='images/print-seductive.png' />
+							</div>
+							<div onclick='window.open("https://github.com/erinachavez/rwet_spring2019/tree/master/assignment5_040219")'>
+								<img src='images/synesthesia-sentences.png' />
+							</div>
+							<div onclick='window.open("images/design9.jpg")'>
+								<img src='images/design9.jpg' />
+							</div>
+							<div onclick='window.open("images/print-boy-orange.png")'>
+								<img src='images/print-boy-orange.png' />
+							</div>
 						</div>
 					</div>
 				</div>
 
+				<br />
 				<nav>
 					<div>
-						<h2 id='homeh2'>Home</h2>
-						<h2 id='abouth2'>About</h2>
-						<h2 id='worksh2'>Works</h2>
-						<h2 id='connecth2'>Connect</h2>
+						<h2>Home</h2>
+						<h2>About</h2>
+						<h2>Works</h2>
+						<h2>Connect</h2>
 					</div>
 					<svg>
 						<defs>
@@ -104,33 +165,33 @@
 					</svg>
 				</nav>
 			</div>
+			<div class='col-md-2'></div>
 		</div>
 
 		<footer class='container'>
-			<div class='container'>
-				<div id='footer1'>
-					<h4>Erina Chavez</h4>
-					<h4>Portfolio</h4>
-				</div>
-				<div id='footer2'>
-					<p><a href='index.html'>Home</a></p>
-					<p><a href='about.html'>About</a></p>
-					<p><a href='works.html'>Works</a></p>
-					<p><a href='connect.html'>Connect</a></p>
-					<p><a href='documents/erina-chavez-resume.pdf' target='_blank'>R&eacute;sum&eacute;</a></p>
-				</div>
-			</div>
-
-			<div id='footer3'>
-				<div id='position'>
-					<div class='container'>
-						<i class='fab fa-github' onclick="window.open('https://github.com/erinachavez');"></i>
-						<i class='fab fa-linkedin' onclick="window.open('https://www.linkedin.com/in/erina-chavez/');"></i>
-						<i class='fab fa-twitter' onclick="window.open('https://twitter.com/erinachavez');"></i>
-						<i class='fab fa-instagram' onclick="window.open('https://www.instagram.com/aireenuh/');"></i>
+			<div class='row'>
+				<div class='col-md-1'></div>
+				<div class='col-md-3 flex-container'>
+					<div>
+						<h4 class='margin-bottom-sm'>Erina Chavez</h4>
+						<h4>Portfolio</h4>
 					</div>
-					<p>Site by Erina Chavez</p>
+					<div>
+						<h6><a href='index.html'>Home</a></p>
+						<h6><a href='about.html'>About</a></p>
+						<h6><a href='works.html'>Works</a></p>
+						<h6><a href='connect.html'>Connect</a></p>
+						<h6><a href='documents/erina-chavez-resume.pdf' target='_blank'>R&eacute;sum&eacute;</a></p>
+					</div>
 				</div>
+				<div class='col-md-5'></div>
+				<div class='col-md-2 text-right'>
+					<i class='fab fa-github' onclick="window.open('https://github.com/erinachavez');"></i>
+					<i class='fab fa-linkedin' onclick="window.open('https://www.linkedin.com/in/erina-chavez/');"></i>
+					<i class='fab fa-twitter' onclick="window.open('https://twitter.com/erinachavez');"></i>
+					<i class='fab fa-instagram' onclick="window.open('https://www.instagram.com/aireenuh/');"></i>
+				</div>
+				<div class='col-md-1'></div>
 			</div>
 		</footer>
 	</body>
