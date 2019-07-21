@@ -1,0 +1,78 @@
+<div class="d-none d-lg-block">
+  <div>
+    <h2 data-polygon-target="home-polygon" onclick="location.href='index.html'">Home</h2>
+    <h2 data-polygon-target="about-polygon" onclick="location.href='about.html'">About</h2>
+    <h2 data-polygon-target="works-polygon" onclick="location.href='works.html'">Works</h2>
+    <h2 data-polygon-target="connect-polygon" onclick="location.href='connect.html'">Connect</h2>
+  </div>
+  <svg>
+    <defs>
+      <filter id="f1" x="-25" y="-25" width="300" height="450">
+        <feOffset result="offOut" in="SourceGraphic" dx="0" dy="0" />
+        <feColorMatrix result = "matrixOut" in = "offOut" type = "matrix" values = "0.2 0 0 0 0 0 0.2 0 0 0 0 0 0.2 0 0 0 0 0 1 0"/>
+        <feGaussianBlur result="blurOut" in="matrixOut" stdDeviation="10" />
+        <feBlend in="SourceGraphic" in2="blurOut" mode="normal" />
+      </filter>
+    </defs>
+
+    <polygon
+      id="home-polygon" onclick="location.href='index.html'"
+      points="63.75,18.75 206.25,48.75 168.75,318.75 112.5,281.25 93.75,311.25 18.75,281.25 48.75,168.75 18.75,135 60,75"
+      stroke="rgb(156,199,64)" fill="rgb(156,199,64)" stroke-width="1"
+    />
+    <polygon
+      id="about-polygon" onclick="location.href='about.html'"
+      points="225,26.25 187.5,281.25 243.75,281.25 262.5,318.75 375,262.5 375,206.25 348.75,131.25 412.5,56.25 337.5,63.75 356.25,18.75"
+      stroke="rgb(252,201,48)" fill="rgb(252,201,48)" stroke-width="1"
+    />
+    <polygon
+      id="works-polygon" onclick="location.href='works.html'"
+      points="363.75,135 458.25,18.75 555,37.5 525,131.25 555,206.25 525,243.75 555,318.75 389.25,300 390,206.25"
+      stroke="rgb(237,102,122)" fill="rgb(237,102,122)" stroke-width="1"
+    />
+    <polygon
+      id="connect-polygon" onclick="location.href='connect.html'"
+      points="543.75,131.25 573.75,206.25 543.75,243.75 573.75,318.75 712.5,281.25 693.75,198.75 731.25,187.5 731.25,56.25 675,75 675,18.75 630,45 573.75,37.5"
+      stroke="rgb(28,174,214)" fill="rgb(28,174,214)" stroke-width="1"
+    />
+  </svg>
+</div>
+<div class="d-lg-none">
+  <div>
+    <h2 data-polygon-target="home-polygon" onclick="location.href='index.html'">Home</h2>
+    <h2 data-polygon-target="about-polygon" onclick="location.href='about.html'">About</h2>
+    <h2 data-polygon-target="works-polygon" onclick="location.href='works.html'">Works</h2>
+    <h2 data-polygon-target="connect-polygon" onclick="location.href='connect.html'">Connect</h2>
+  </div>
+  <svg>
+    <defs>
+      <filter id="f1" x="-25" y="-25" width="300" height="450">
+        <feOffset result="offOut" in="SourceGraphic" dx="0" dy="0" />
+        <feColorMatrix result = "matrixOut" in = "offOut" type = "matrix" values = "0.2 0 0 0 0 0 0.2 0 0 0 0 0 0.2 0 0 0 0 0 1 0"/>
+        <feGaussianBlur result="blurOut" in="matrixOut" stdDeviation="10" />
+        <feBlend in="SourceGraphic" in2="blurOut" mode="normal" />
+      </filter>
+    </defs>
+
+    <polygon
+      id="home-polygon" onclick="location.href='index.html'"
+      points="18.75,63.75 48.75,206.25 318.75,168.75 281.25,112.5 311.25,93.75 281.25,18.75 168.75,48.75 135,18.75 75,60"
+      stroke="rgb(156,199,64)" fill="rgb(156,199,64)" stroke-width="1"
+    />
+    <polygon
+      id="about-polygon" onclick="location.href='about.html'"
+      points="26.25,225 281.25,187.5 281.25,243.75 318.75,262.5 262.5,375 206.25,375 131.25,348.75 56.25,412.5 63.75,337.5 18.75,356.25"
+      stroke="rgb(252,201,48)" fill="rgb(252,201,48)" stroke-width="1"
+    />
+    <polygon
+      id="works-polygon" onclick="location.href='works.html'"
+      points="135,363.75 18.75,458.25 37.5,555 131.25,525 206.25,555 243.75,525 318.75,555 300,389.25 206.25,390"
+      stroke="rgb(237,102,122)" fill="rgb(237,102,122)" stroke-width="1"
+    />
+    <polygon
+      id="connect-polygon" onclick="location.href='connect.html'"
+      points="131.25,543.75 206.25,573.75 243.75,543.75 318.75,573.75 281.25,712.5 198.75,693.75 187.5,731.25 56.25,731.25 75,675 18.75,675 45,630 37.5,573.75"
+      stroke="rgb(28,174,214)" fill="rgb(28,174,214)" stroke-width="1"
+    />
+  </svg>
+</div>

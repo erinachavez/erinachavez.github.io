@@ -51,18 +51,18 @@ a {transition: ease-in-out 0.2s;}
 
 /* bootstrap */
 .container, .row,
-.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1,
-.col-xs-2, .col-sm-2, .col-md-2, .col-lg-2,
-.col-xs-3, .col-sm-3, .col-md-3, .col-lg-3,
-.col-xs-4, .col-sm-4, .col-md-4, .col-lg-4,
-.col-xs-5, .col-sm-5, .col-md-5, .col-lg-5,
-.col-xs-6, .col-sm-6, .col-md-6, .col-lg-6,
-.col-xs-7, .col-sm-7, .col-md-7, .col-lg-7,
-.col-xs-8, .col-sm-8, .col-md-8, .col-lg-8,
-.col-xs-9, .col-sm-9, .col-md-9, .col-lg-9,
-.col-xs-10, .col-sm-10, .col-md-10, .col-lg-10,
-.col-xs-11, .col-sm-11, .col-md-11, .col-lg-11,
-.col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+.col-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xl-1,
+.col-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xl-2,
+.col-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xl-3,
+.col-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xl-4,
+.col-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xl-5,
+.col-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xl-6,
+.col-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xl-7,
+.col-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xl-8,
+.col-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xl-9,
+.col-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xl-10,
+.col-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xl-11,
+.col-12, .col-sm-12, .col-md-12, .col-lg-12, .col-xl-12 {
   margin: 0;
   padding: 0;
 }
@@ -70,9 +70,14 @@ a {transition: ease-in-out 0.2s;}
 .container {max-width: none;}
 
 /* navbar */
-nav, nav div, nav svg {
+nav, nav .d-lg-block div, nav .d-lg-block svg {
   width: 750px;
   height: 340px;
+}
+
+nav .d-lg-none div, nav .d-lg-none svg {
+  width: 340px;
+  height: 750px;
 }
 
 nav div, nav svg {
@@ -134,7 +139,7 @@ footer {
   }
 
   footer .row div:nth-child(2) div:nth-child(2) {
-    border-left: 2px solid #fff;
+    border-left: 1px solid #fff;
     margin-left: 20px;
     padding-left: 15px;
   }
@@ -178,6 +183,10 @@ footer {
   vertical-align: middle
 }
 
+.margin-centered {
+  margin-left: auto;
+  margin-right: auto;
+}
 .margin-left {margin-left: 50px;}
 .margin-right {margin-right: 50px;}
 .margin-bottom-sm {margin-bottom: 5px;}
@@ -260,52 +269,51 @@ footer {
   border-bottom: 2px dotted rgb(252, 201, 48);
 }
 
-  #about .main-content .flex-container #profile-photo {
+  #about .main-content .profile-photo {
     background-image: url('../images/profile-photo.jpg');
-    background-size: cover;
-    clip-path: url('#profile-photo-clip-path');
+    background-size: contain;
     width: 300px;
   }
 
-    #about .main-content .flex-container #profile-photo svg {
+    #about .main-content .d-lg-block .profile-photo {clip-path: url('#profile-photo-clip-path');}
+    #about .main-content .d-lg-none .profile-photo {clip-path: url('#profile-photo-mobile-clip-path');}
+
+    #about .main-content .profile-photo svg {
       width: 300px;
       height: 300px;
     }
 
 /* WORKS */
-#works #gallery .row .col-md-3 {
+#works #gallery .row .gallery-item {
+  margin-bottom: 30px;
+  cursor: pointer;
+  position: relative;
   padding: 0 15px;
 }
 
-  #works #gallery .row .col-md-3 div {
-    margin-bottom: 30px;
-    cursor: pointer;
-    position: relative;
+  #works #gallery .row .gallery-item .gallery-text {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: ease-in-out 0.2s;
+    z-index: 100;
+    margin: 0;
+    padding: 15px 20px;
   }
 
-    #works #gallery .row .col-md-3 div .gallery-text {
-      opacity: 0;
-      position: absolute;
-      top: 0;
-      left: 0;
-      transition: ease-in-out 0.2s;
-      z-index: 100;
-      margin: 0;
-      padding: 15px 20px;
+    #works #gallery .row .gallery-item:hover .gallery-text {
+      opacity: 1;
     }
 
-      #works #gallery .row .col-md-3 div:hover .gallery-text {
-        opacity: 1;
-      }
+  #works #gallery .row .gallery-item img {
+    width: 100%;
+    transition: ease-in-out 0.2s;
+  }
 
-    #works #gallery .row .col-md-3 div img {
-      width: 100%;
-      transition: ease-in-out 0.2s;
+    #works #gallery .row .gallery-item:hover img {
+      opacity: 0.25;
     }
-
-      #works #gallery .row .col-md-3 div:hover img {
-        opacity: 0.25;
-      }
 
 /* CONTACT */
 #contact p a {
@@ -326,3 +334,118 @@ footer {
     #contact #icons i:hover {
       opacity: 0.75;
     }
+
+/* .col-lg */
+@media screen and (max-width: 1199px) {
+  h3 {
+    font-size: 22px;
+    line-height: 28px;
+  }
+
+  #home #typeBlock h1#typeHere {font-size: 90px;}
+    #home #typeBlock h1#typeHere span#font3 {font-size: 40px;}
+    #home #typeBlock h1#typeHere span#font5 {font-size: 65px;}
+
+  #home #typeBlock .typed-cursor {
+    font-size: 90px;
+    line-height: 90px;
+  }
+}
+
+/* .col-md */
+@media screen and (max-width: 991px) {
+  h3 {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  nav {
+    width: 340px;
+    height: 750px;
+  }
+
+  nav div h2:first-child {
+    top: 155px;
+    left: 60px;
+  }
+
+  nav div h2:nth-child(2) {
+    top: 265px;
+    left: 200px;
+  }
+
+  nav div h2:nth-child(3) {
+    top: 415px;
+    left: 105px;
+  }
+
+  nav div h2:last-child {
+    top: 585px;
+    left: 60px;
+  }
+
+  #home #typeBlock h1#typeHere {font-size: 80px;}
+    #home #typeBlock h1#typeHere span#font3 {font-size: 25px;}
+    #home #typeBlock h1#typeHere span#font5 {font-size: 50px;}
+
+  #home #typeBlock .typed-cursor {
+    font-size: 80px;
+    line-height: 80px;
+  }
+}
+
+/* .col-sm */
+@media screen and (max-width: 767px) {
+  h3 {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  footer .row div:nth-child(2) div:first-child h4 {
+    font-size: 16px;
+    line-height: 16px;
+    height: 16px;
+  }
+
+  #home #typeBlock h1#typeHere {font-size: 65px;}
+    #home #typeBlock h1#typeHere span#font3 {font-size: 20px;}
+    #home #typeBlock h1#typeHere span#font5 {font-size: 35px;}
+
+  #home #typeBlock .typed-cursor {
+    font-size: 65px;
+    line-height: 65px;
+  }
+
+  #works #gallery .row .gallery-item {
+    padding: 0 5px;
+    margin-bottom: 10px;
+  }
+}
+
+/* .col */
+@media screen and (max-width: 575px) {
+  h3 {
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  p {font-size: 16px;}
+
+  footer .row div:nth-child(2) div:first-child h4 {
+    font-size: 14px;
+    line-height: 14px;
+    height: 14px;
+  }
+
+  #home #typeBlock h1#typeHere {font-size: 55px;}
+    #home #typeBlock h1#typeHere span#font3 {font-size: 15px;}
+    #home #typeBlock h1#typeHere span#font5 {font-size: 30px;}
+
+  #home #typeBlock .typed-cursor {
+    font-size: 55px;
+    line-height: 55px;
+  }
+
+  .xs-pad-left {padding-left: 25px;}
+  .xs-pad-right {padding-right: 25px;}
+}
