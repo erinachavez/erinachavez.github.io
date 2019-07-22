@@ -270,18 +270,9 @@ footer {
 }
 
   #about .main-content .profile-photo {
-    background-image: url('../images/profile-photo.jpg');
-    background-size: contain;
     width: 300px;
+    height: 300px;
   }
-
-    #about .main-content .d-lg-block .profile-photo {clip-path: url('#profile-photo-clip-path');}
-    #about .main-content .d-lg-none .profile-photo {clip-path: url('#profile-photo-mobile-clip-path');}
-
-    #about .main-content .profile-photo svg {
-      width: 300px;
-      height: 300px;
-    }
 
 /* WORKS */
 #works #gallery .row .gallery-item {
@@ -431,6 +422,7 @@ footer {
 
   p {font-size: 16px;}
 
+  footer .row {padding: 15px 0;}
   footer .row div:nth-child(2) div:first-child h4 {
     font-size: 14px;
     line-height: 14px;
@@ -446,6 +438,6 @@ footer {
     line-height: 55px;
   }
 
-  .xs-pad-left {padding-left: 25px;}
-  .xs-pad-right {padding-right: 25px;}
+  .xs-pad-left {padding-left: 15px;}
+  .xs-pad-right {padding-right: 15px;}
 }

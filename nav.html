@@ -45,15 +45,6 @@
     <h2 data-polygon-target="connect-polygon" onclick="location.href='connect.html'">Connect</h2>
   </div>
   <svg>
-    <defs>
-      <filter id="f1" x="-25" y="-25" width="300" height="450">
-        <feOffset result="offOut" in="SourceGraphic" dx="0" dy="0" />
-        <feColorMatrix result = "matrixOut" in = "offOut" type = "matrix" values = "0.2 0 0 0 0 0 0.2 0 0 0 0 0 0.2 0 0 0 0 0 1 0"/>
-        <feGaussianBlur result="blurOut" in="matrixOut" stdDeviation="10" />
-        <feBlend in="SourceGraphic" in2="blurOut" mode="normal" />
-      </filter>
-    </defs>
-
     <polygon
       id="home-polygon" onclick="location.href='index.html'"
       points="18.75,63.75 48.75,206.25 318.75,168.75 281.25,112.5 311.25,93.75 281.25,18.75 168.75,48.75 135,18.75 75,60"
