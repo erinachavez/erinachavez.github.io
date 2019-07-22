@@ -410,8 +410,8 @@ footer {
     #works #lightbox .close {
       color: #fff;
       position: absolute;
-      top: 25px;
-      right: 25px;
+      top: 10px;
+      right: 10px;
       font-size: 24px;
     }
 
