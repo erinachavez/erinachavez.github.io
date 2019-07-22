@@ -1,7 +1,8 @@
+// Footer and Nav Includes
 w3.includeHTML();
 
 $(document).ready(function() {
-	// Navigation filter
+	// Nav Filters
 	$("nav polygon").mouseover(function() {
 		$(this).attr("filter","url('#f1')");
 	});
@@ -18,9 +19,11 @@ $(document).ready(function() {
 	$("nav h2").mouseout(function() {
 		$("nav polygon").removeAttr("filter");
 	});
+
+	slideIndex = 0;
 });
 
-/* Home Type Animation */
+// Home Typing Animation
 function typed_load() {
 	var typed = new Typed("#typeHere", {
 		stringsElement: "#typeText",
@@ -43,4 +46,31 @@ function typed_load() {
 		var currentFontColor = $("#typeHere span").css("color");
 		$(".typed-cursor").css("color",currentFontColor);
 	});
+}
+
+// Works Lighbox
+function openModal(n) {
+  $("#lightbox").css("display", "flex");
+	showSlides(n);
+}
+
+function closeModal() {
+  $("#lightbox").css("display", "none");
+}
+
+function plusSlides(n) {
+	showSlides(slideIndex += n);
+}
+
+function showSlides(n) {
+  var slides = document.getElementsByClassName("lightbox-item");
+
+  if (n > slides.length-1) {slideIndex = 0;}
+  else if (n < 0) {slideIndex = slides.length-1;}
+	else {slideIndex = n;}
+
+  for (var i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slides[slideIndex].style.display = "block";
 }
