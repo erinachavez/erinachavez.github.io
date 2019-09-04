@@ -20,6 +20,22 @@ $(document).ready(function() {
 		$("nav polygon").removeAttr("filter");
 	});
 
+	// Works Checkboxes
+	$("#works .checkbox-line input[type='checkbox']").each(function() {
+		$(this).on("change", function() {
+			var toggledClass = $(this).val();
+
+			if ($(this).is(":checked")) {
+				$("." + toggledClass).show();
+				$("." + toggledClass + ".lightbox-item").removeClass("lightbox-skip");
+			}
+			else {
+				$("." + toggledClass).hide();
+				$("." + toggledClass + ".lightbox-item").addClass("lightbox-skip");
+			}
+		});
+	});
+
 	slideIndex = 0;
 });
 
@@ -63,7 +79,7 @@ function plusSlides(n) {
 }
 
 function showSlides(n) {
-  var slides = document.getElementsByClassName("lightbox-item");
+  var slides = document.querySelectorAll(".lightbox-item:not(.lightbox-skip)");
 
   if (n > slides.length-1) {slideIndex = 0;}
   else if (n < 0) {slideIndex = slides.length-1;}

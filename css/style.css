@@ -196,6 +196,12 @@ footer {
 .text-pink {color: rgb(237, 102, 122);}
 .text-blue {color: rgb(28, 174, 214);}
 
+.checkbox-line input[type="checkbox"] {
+  height: 27px;
+  vertical-align: middle;
+}
+.checkbox-line p {margin: 0 25px 0 5px;}
+
 
 /* HOME */
 @font-face {font-family: 'Bebas Neue'; src: url('../fonts/BebasNeue.ttf');}
